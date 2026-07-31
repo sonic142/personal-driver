@@ -302,7 +302,7 @@ function Index() {
                 <img
                   src={logoAsset.url}
                   alt="Personal Driver"
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                 />
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-white/40">
