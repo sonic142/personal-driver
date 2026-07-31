@@ -11,16 +11,16 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Lumière | Transporte Privado Ejecutivo",
+        title: "Personal Driver | Transporte Privado Ejecutivo",
       },
       {
         name: "description",
         content:
-          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual. Explora nuestra flota seleccionada de vehículos ejecutivos.",
+          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual. Explora la flota seleccionada de Personal Driver.",
       },
       {
         property: "og:title",
-        content: "Lumière | Transporte Privado Ejecutivo",
+        content: "Personal Driver | Transporte Privado Ejecutivo",
       },
       {
         property: "og:description",
