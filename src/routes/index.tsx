@@ -298,12 +298,15 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-20 grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
-              <div className="mb-6 flex items-center">
+              <div className="mb-6 flex items-center gap-3">
                 <img
-                  src={logoAsset.url}
-                  alt="Personal Driver"
-                  className="h-10 w-auto"
+                  src={iconAsset.url}
+                  alt=""
+                  className="h-8 w-auto"
                 />
+                <span className="font-display text-2xl font-bold italic tracking-tight">
+                  Personal Driver
+                </span>
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-white/40">
                 Creando viajes fluidos para líderes mundiales, ejecutivos de
