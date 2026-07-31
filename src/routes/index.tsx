@@ -336,7 +336,7 @@ function Index() {
 
           <div className="flex flex-col items-center gap-4 border-t border-white/5 pt-8 md:flex-row md:justify-between">
             <p className="text-[10px] uppercase tracking-widest text-white/20">
-              &copy; {new Date().getFullYear()} Lumière Transporte Privado Corp.
+              &copy; {new Date().getFullYear()} Personal Driver Corp.
             </p>
             <div className="flex gap-8">
               <a
