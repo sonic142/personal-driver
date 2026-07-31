@@ -105,7 +105,7 @@ function Index() {
               alt=""
               className="h-8 w-auto"
             />
-            <span className="font-display text-xl font-bold italic tracking-tight">
+            <span className="font-display text-xl font-bold tracking-tight">
               Personal Driver
             </span>
           </a>
@@ -142,7 +142,7 @@ function Index() {
             <div className="max-w-3xl">
               <h1 className="mb-8 font-display text-6xl leading-[0.9] md:text-8xl">
                 Redefiniendo el{" "}
-                <span className="italic text-gold">Movimiento</span>
+                <span className="text-gold">Movimiento</span>
               </h1>
               <p className="mb-10 text-lg font-light leading-relaxed text-white/50 md:text-xl">
                 Transporte privado de élite para quienes valoran el tiempo, la
@@ -303,7 +303,7 @@ function Index() {
                   alt=""
                   className="h-8 w-auto"
                 />
-                <span className="font-display text-2xl font-bold italic tracking-tight">
+                <span className="font-display text-2xl font-bold tracking-tight">
                   Personal Driver
                 </span>
               </div>
