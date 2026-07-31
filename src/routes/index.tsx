@@ -99,12 +99,13 @@ function Index() {
       {/* Navigation */}
       <nav className="fixed top-0 z-50 w-full border-b border-white/5 bg-onyx/80 backdrop-blur-md">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-sm bg-gold" />
-            <span className="font-display text-xl font-bold italic tracking-tight">
-              Lumière
-            </span>
-          </div>
+          <a href="#" className="flex items-center">
+            <img
+              src={logoAsset.url}
+              alt="Personal Driver"
+              className="h-8 w-auto"
+            />
+          </a>
 
           <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-white/60 md:flex">
             <a href="#fleet" className="transition-colors hover:text-gold">
