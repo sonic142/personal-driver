@@ -294,11 +294,12 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-20 grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
-              <div className="mb-6 flex items-center gap-2">
-                <div className="h-6 w-6 rounded-sm bg-gold" />
-                <span className="font-display text-lg font-bold italic">
-                  Lumière
-                </span>
+              <div className="mb-6 flex items-center">
+                <img
+                  src={logoAsset.url}
+                  alt="Personal Driver"
+                  className="h-6 w-auto"
+                />
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-white/40">
                 Creando viajes fluidos para líderes mundiales, ejecutivos de
