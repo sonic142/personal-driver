@@ -280,7 +280,7 @@ function Index() {
               arreglos corporativos.
             </p>
             <a
-              href="mailto:concierge@lumiere.transport"
+              href="mailto:concierge@pdriver.co"
               className="inline-block border border-gold px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] text-gold transition-all duration-300 hover:bg-gold hover:text-onyx"
             >
               Contactar Concierge
