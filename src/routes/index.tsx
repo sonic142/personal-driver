@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import sedanImg from "../assets/vehicle-sedan.jpg";
 import suvImg from "../assets/vehicle-suv.jpg";
 import sprinterImg from "../assets/vehicle-sprinter.jpg";
+import logoAsset from "../assets/pdriver-logo-light.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
