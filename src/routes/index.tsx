@@ -118,13 +118,14 @@ function Index() {
           </div>
 
           <div>
-            {/* Actualiza la prop `to` cuando tu ruta de inicio de sesión esté lista */}
-            <Link
-              to="/login"
+            <a
+              href="https://www.pdriver.co/login"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-gold px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-gold transition-all duration-300 hover:bg-gold hover:text-onyx md:px-8"
             >
               Acceso Clientes
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
