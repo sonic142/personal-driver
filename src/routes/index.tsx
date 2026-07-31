@@ -4,22 +4,23 @@ import { useRef, useState, useEffect } from "react";
 import sedanImg from "../assets/vehicle-sedan.jpg";
 import suvImg from "../assets/vehicle-suv.jpg";
 import sprinterImg from "../assets/vehicle-sprinter.jpg";
+import iconAsset from "../assets/pdriver-icon-light.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
       {
-        title: "Lumière | Transporte Privado Ejecutivo",
+        title: "Personal Driver | Transporte Privado Ejecutivo",
       },
       {
         name: "description",
         content:
-          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual. Explora nuestra flota seleccionada de vehículos ejecutivos.",
+          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual. Explora la flota seleccionada de Personal Driver.",
       },
       {
         property: "og:title",
-        content: "Lumière | Transporte Privado Ejecutivo",
+        content: "Personal Driver | Transporte Privado Ejecutivo",
       },
       {
         property: "og:description",
@@ -98,12 +99,16 @@ function Index() {
       {/* Navigation */}
       <nav className="fixed top-0 z-50 w-full border-b border-white/5 bg-onyx/80 backdrop-blur-md">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-sm bg-gold" />
+          <a href="#" className="flex items-center gap-3">
+            <img
+              src={iconAsset.url}
+              alt=""
+              className="h-8 w-auto"
+            />
             <span className="font-display text-xl font-bold italic tracking-tight">
-              Lumière
+              Personal Driver
             </span>
-          </div>
+          </a>
 
           <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-white/60 md:flex">
             <a href="#fleet" className="transition-colors hover:text-gold">
@@ -278,7 +283,7 @@ function Index() {
               arreglos corporativos.
             </p>
             <a
-              href="mailto:concierge@lumiere.transport"
+              href="mailto:concierge@pdriver.co"
               className="inline-block border border-gold px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] text-gold transition-all duration-300 hover:bg-gold hover:text-onyx"
             >
               Contactar Concierge
@@ -292,10 +297,14 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-20 grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
-              <div className="mb-6 flex items-center gap-2">
-                <div className="h-6 w-6 rounded-sm bg-gold" />
-                <span className="font-display text-lg font-bold italic">
-                  Lumière
+              <div className="mb-6 flex items-center gap-3">
+                <img
+                  src={iconAsset.url}
+                  alt=""
+                  className="h-8 w-auto"
+                />
+                <span className="font-display text-2xl font-bold italic tracking-tight">
+                  Personal Driver
                 </span>
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-white/40">
@@ -333,7 +342,7 @@ function Index() {
 
           <div className="flex flex-col items-center gap-4 border-t border-white/5 pt-8 md:flex-row md:justify-between">
             <p className="text-[10px] uppercase tracking-widest text-white/20">
-              &copy; {new Date().getFullYear()} Lumière Transporte Privado Corp.
+              &copy; {new Date().getFullYear()} Personal Driver Corp.
             </p>
             <div className="flex gap-8">
               <a
