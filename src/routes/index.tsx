@@ -103,7 +103,7 @@ function Index() {
             <img
               src={logoAsset.url}
               alt="Personal Driver"
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </a>
 
