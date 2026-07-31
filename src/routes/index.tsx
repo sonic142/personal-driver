@@ -10,21 +10,21 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Lumière | Private Executive Transport",
+        title: "Lumière | Transporte Privado Ejecutivo",
       },
       {
         name: "description",
         content:
-          "Elite private transportation tailored for those who value time, discretion, and unparalleled comfort. Explore our curated fleet of executive vehicles.",
+          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual. Explora nuestra flota seleccionada de vehículos ejecutivos.",
       },
       {
         property: "og:title",
-        content: "Lumière | Private Executive Transport",
+        content: "Lumière | Transporte Privado Ejecutivo",
       },
       {
         property: "og:description",
         content:
-          "Elite private transportation tailored for those who value time, discretion, and unparalleled comfort.",
+          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -35,23 +35,23 @@ export const Route = createFileRoute("/")({
 const vehicles = [
   {
     id: "sedan",
-    name: "The Sovereign Class",
-    category: "Executive Sedan",
-    specs: "Seats 3 · 4 Suitcases · Wi-Fi",
+    name: "Clase Sovereign",
+    category: "Sedán Ejecutivo",
+    specs: "3 Asientos · 4 Maletas · Wi-Fi",
     image: sedanImg,
   },
   {
     id: "suv",
-    name: "The Atlas Range",
-    category: "Premium SUV",
-    specs: "Seats 6 · 8 Suitcases · Refreshments",
+    name: "Gama Atlas",
+    category: "SUV Premium",
+    specs: "6 Asientos · 8 Maletas · Refrescos",
     image: suvImg,
   },
   {
     id: "sprinter",
-    name: "The Horizon Suite",
-    category: "Private Shuttle",
-    specs: "Seats 12 · 15 Suitcases · Full Media Kit",
+    name: "Suite Horizon",
+    category: "Shuttle Privado",
+    specs: "12 Asientos · 15 Maletas · Kit Multimedia",
     image: sprinterImg,
   },
 ];
@@ -107,23 +107,23 @@ function Index() {
 
           <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-white/60 md:flex">
             <a href="#fleet" className="transition-colors hover:text-gold">
-              Fleet
+              Flota
             </a>
             <a href="#services" className="transition-colors hover:text-gold">
-              Services
+              Servicios
             </a>
             <a href="#contact" className="transition-colors hover:text-gold">
-              Contact
+              Contacto
             </a>
           </div>
 
           <div>
-            {/* Update the `to` prop when your login route is ready */}
+            {/* Actualiza la prop `to` cuando tu ruta de inicio de sesión esté lista */}
             <Link
               to="/login"
               className="border border-gold px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-gold transition-all duration-300 hover:bg-gold hover:text-onyx md:px-8"
             >
-              Client Access
+              Acceso Clientes
             </Link>
           </div>
         </div>
@@ -135,19 +135,19 @@ function Index() {
           <div className="mx-auto max-w-7xl">
             <div className="max-w-3xl">
               <h1 className="mb-8 font-display text-6xl leading-[0.9] md:text-8xl">
-                Redefining <span className="italic text-gold">Movement</span>
+                Redefiniendo el{" "}
+                <span className="italic text-gold">Movimiento</span>
               </h1>
               <p className="mb-10 text-lg font-light leading-relaxed text-white/50 md:text-xl">
-                Elite private transportation tailored for those who value time,
-                discretion, and unparalleled comfort across the metropolitan
-                landscape.
+                Transporte privado de élite para quienes valoran el tiempo, la
+                discreción y la comodidad sin igual en el paisaje metropolitano.
               </p>
               <div className="flex gap-4">
                 <a
                   href="#fleet"
                   className="bg-white px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] text-onyx transition-colors hover:bg-gold"
                 >
-                  Book Journey
+                  Reservar Viaje
                 </a>
               </div>
             </div>
@@ -159,10 +159,10 @@ function Index() {
           <div className="mx-auto mb-12 flex max-w-7xl items-end justify-between px-6">
             <div>
               <h2 className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-gold">
-                Our Curated Fleet
+                Nuestra Flota Seleccionada
               </h2>
               <p className="font-display text-3xl">
-                Precision Engineering. Exceptional Comfort.
+                Ingeniería de Precisión. Confort Excepcional.
               </p>
             </div>
             <div className="hidden gap-4 md:flex">
@@ -170,7 +170,7 @@ function Index() {
                 type="button"
                 onClick={() => scrollBy("left")}
                 disabled={!canScrollLeft}
-                aria-label="Previous vehicle"
+                aria-label="Vehículo anterior"
                 className="rounded-full border border-white/10 p-3 text-white/40 transition-colors hover:border-gold hover:text-gold disabled:cursor-not-allowed disabled:opacity-40"
               >
                 ←
@@ -179,7 +179,7 @@ function Index() {
                 type="button"
                 onClick={() => scrollBy("right")}
                 disabled={!canScrollRight}
-                aria-label="Next vehicle"
+                aria-label="Siguiente vehículo"
                 className="rounded-full border border-white/20 p-3 text-white/60 transition-colors hover:border-gold hover:text-gold disabled:cursor-not-allowed disabled:opacity-40"
               >
                 →
@@ -230,28 +230,28 @@ function Index() {
           <div className="mx-auto max-w-7xl px-6">
             <div className="mb-16 max-w-2xl">
               <h2 className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-gold">
-                Services
+                Servicios
               </h2>
               <p className="font-display text-3xl md:text-4xl">
-                Every journey, orchestrated to the last detail.
+                Cada viaje, orquestado hasta el último detalle.
               </p>
             </div>
             <div className="grid gap-12 md:grid-cols-3">
               {[
                 {
-                  title: "Airport Transfers",
+                  title: "Traslados al Aeropuerto",
                   description:
-                    "Flight-tracked pickups and curbside meet-and-greet at every major international hub.",
+                    "Recogidas con seguimiento de vuelo y servicio de bienvenida en las principales terminales internacionales.",
                 },
                 {
-                  title: "Corporate Accounts",
+                  title: "Cuentas Corporativas",
                   description:
-                    "Centralized billing, priority dispatch, and dedicated account management for executive teams.",
+                    "Facturación centralizada, despacho prioritario y gestión de cuenta dedicada para equipos ejecutivos.",
                 },
                 {
-                  title: "Event Logistics",
+                  title: "Logística de Eventos",
                   description:
-                    "Coordinated multi-vehicle transport for galas, summits, roadshows, and private celebrations.",
+                    "Transporte coordinado de múltiples vehículos para galas, cumbres, roadshows y celebraciones privadas.",
                 },
               ].map((service) => (
                 <div key={service.title} className="space-y-4">
@@ -270,17 +270,17 @@ function Index() {
         <section id="contact" className="py-32">
           <div className="mx-auto max-w-4xl px-6 text-center">
             <h2 className="mb-8 font-display text-4xl leading-tight md:text-5xl">
-              The journey is as important as the destination.
+              El viaje es tan importante como el destino.
             </h2>
             <p className="mb-10 text-white/50">
-              Reach our concierge team for bespoke itineraries and corporate
-              arrangements.
+              Contacta a nuestro equipo de concierge para itinerarios a medida y
+              arreglos corporativos.
             </p>
             <a
               href="mailto:concierge@lumiere.transport"
               className="inline-block border border-gold px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] text-gold transition-all duration-300 hover:bg-gold hover:text-onyx"
             >
-              Contact Concierge
+              Contactar Concierge
             </a>
           </div>
         </section>
@@ -298,14 +298,14 @@ function Index() {
                 </span>
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-white/40">
-                Crafting seamless journeys for world leaders, business
-                executives, and luxury travelers since 2012.
+                Creando viajes fluidos para líderes mundiales, ejecutivos de
+                negocios y viajeros de lujo desde 2012.
               </p>
             </div>
 
             <div>
               <h4 className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white/80">
-                Connect
+                Conectar
               </h4>
               <ul className="space-y-4">
                 {socialLinks.map((link) => (
@@ -323,29 +323,29 @@ function Index() {
 
             <div>
               <h4 className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em] text-white/80">
-                Contact
+                Contacto
               </h4>
-              <p className="mb-2 text-sm text-white/40">Global Support 24/7</p>
+              <p className="mb-2 text-sm text-white/40">Soporte Global 24/7</p>
               <p className="text-sm font-bold">+1 (555) 980-0010</p>
             </div>
           </div>
 
           <div className="flex flex-col items-center gap-4 border-t border-white/5 pt-8 md:flex-row md:justify-between">
             <p className="text-[10px] uppercase tracking-widest text-white/20">
-              &copy; {new Date().getFullYear()} Lumière Private Transport Corp.
+              &copy; {new Date().getFullYear()} Lumière Transporte Privado Corp.
             </p>
             <div className="flex gap-8">
               <a
                 href="#"
                 className="text-[10px] uppercase tracking-widest text-white/20 transition-colors hover:text-white"
               >
-                Privacy Policy
+                Política de Privacidad
               </a>
               <a
                 href="#"
                 className="text-[10px] uppercase tracking-widest text-white/20 transition-colors hover:text-white"
               >
-                Terms of Service
+                Términos de Servicio
               </a>
             </div>
           </div>
