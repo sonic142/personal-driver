@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lumière | Private Executive Transport" },
+      { title: "Lumière | Transporte Privado Ejecutivo" },
       {
         name: "description",
         content:
-          "Elite private transportation tailored for those who value time, discretion, and unparalleled comfort. Book your executive chauffeur service today.",
+          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual. Reserva tu servicio de chofer ejecutivo hoy.",
       },
-      { name: "author", content: "Lumière Private Transport" },
-      { property: "og:title", content: "Lumière | Private Executive Transport" },
+      { name: "author", content: "Lumière Transporte Privado" },
+      { property: "og:title", content: "Lumière | Transporte Privado Ejecutivo" },
       {
         property: "og:description",
         content:
-          "Elite private transportation tailored for those who value time, discretion, and unparalleled comfort.",
+          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
