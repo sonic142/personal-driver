@@ -58,7 +58,7 @@ const vehicles = [
 ];
 
 const socialLinks = [
-  { name: "Instagram", href: "#" },
+  { name: "Instagram", href: "https://www.instagram.com/personaldriver_co/" },
   { name: "LinkedIn", href: "#" },
   { name: "X", href: "#" },
 ];
