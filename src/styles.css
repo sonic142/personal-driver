@@ -60,10 +60,17 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Premium executive transport palette */
+  /* Paleta cultural del Oriente Antioqueño */
   --color-onyx: var(--onyx);
   --color-gold: var(--gold);
   --color-gold-foreground: var(--gold-foreground);
+  --color-crema: var(--crema);
+  --color-selva: var(--selva);
+  --color-selva-claro: var(--selva-claro);
+  --color-terracota: var(--terracota);
+  --color-fucsia: var(--fucsia);
+  --color-turquesa: var(--turquesa);
+  --color-tinta: var(--tinta);
 
   /* Typography */
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -108,6 +115,14 @@
   --onyx: oklch(0.15 0 0);
   --gold: oklch(0.74 0.13 85);
   --gold-foreground: oklch(0.15 0 0);
+
+  --crema: oklch(0.972 0.028 88);
+  --selva: oklch(0.42 0.11 155);
+  --selva-claro: oklch(0.62 0.14 152);
+  --terracota: oklch(0.61 0.16 42);
+  --fucsia: oklch(0.6 0.21 355);
+  --turquesa: oklch(0.68 0.12 205);
+  --tinta: oklch(0.24 0.04 150);
 }
 
 .dark {

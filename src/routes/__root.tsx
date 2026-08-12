@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Personal Driver | Transporte Privado Ejecutivo" },
+      { title: "Personal Driver | Tours por el Oriente Antioqueño" },
       {
         name: "description",
         content:
-          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual. Reserva tu servicio de chofer ejecutivo hoy.",
+          "Tours y transporte privado por el Oriente Antioqueño: Guatapé, El Peñol, Santa Elena y los pueblos de flores. Reserva tu recorrido con Personal Driver.",
       },
       { name: "author", content: "Personal Driver" },
-      { property: "og:title", content: "Personal Driver | Transporte Privado Ejecutivo" },
+      { property: "og:title", content: "Personal Driver | Tours por el Oriente Antioqueño" },
       {
         property: "og:description",
         content:
-          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual.",
+          "Tours y transporte privado por Guatapé, El Peñol, Santa Elena y los pueblos con flores de Antioquia.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
