@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import sedanImg from "../assets/vehicle-sedan.jpg";
 import suvImg from "../assets/vehicle-suv.jpg";
 import sprinterImg from "../assets/vehicle-sprinter.jpg";
+import heroImg from "../assets/hero-oriente.jpg";
 import iconAsset from "../assets/pdriver-icon-light.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -16,16 +17,16 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual. Explora la flota seleccionada de Personal Driver.",
+          "Tours y transporte privado por el Oriente Antioqueño: Guatapé, El Peñol, Santa Elena y más. Vive Colombia con Personal Driver.",
       },
       {
         property: "og:title",
-        content: "Personal Driver | Transporte Privado Ejecutivo",
+        content: "Personal Driver | Tours por el Oriente Antioqueño",
       },
       {
         property: "og:description",
         content:
-          "Transporte privado de élite para quienes valoran el tiempo, la discreción y la comodidad sin igual.",
+          "Tours y transporte privado por Guatapé, El Peñol, Santa Elena y los pueblos con flores del Oriente Antioqueño.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
