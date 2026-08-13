@@ -149,7 +149,7 @@ function Index() {
               rel="noopener noreferrer"
               className="rounded-full bg-gold px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-tinta transition-transform duration-300 hover:scale-105 md:px-8"
             >
-              Acceso Clientes
+              Ingresar
             </a>
           </div>
         </div>
