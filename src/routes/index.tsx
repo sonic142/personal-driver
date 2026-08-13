@@ -5,7 +5,7 @@ const sedanImg = "/img/vehicle-sedan.jpg";
 const suvImg = "/img/vehicle-suv.jpg";
 const sprinterImg = "/img/vehicle-sprinter.jpg";
 const heroImg = "/img/hero-oriente.jpg";
-import iconAsset from "../assets/pdriver-icon-light.png.asset.json";
+import logoAsset from "../assets/pdriver-logo-white.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -39,7 +39,7 @@ const vehicles = [
     category: "Ideal para parejas",
     specs: "3 Pasajeros · 4 Maletas · Wi-Fi",
     image: sedanImg,
-    accent: "bg-fucsia",
+    accent: "bg-gold",
   },
   {
     id: "suv",
@@ -55,7 +55,7 @@ const vehicles = [
     category: "Grupos y excursiones",
     specs: "12 Pasajeros · 15 Maletas · Kit Multimedia",
     image: sprinterImg,
-    accent: "bg-gold",
+    accent: "bg-selva-claro",
   },
 ];
 
@@ -123,10 +123,11 @@ function Index() {
       <nav className="fixed top-0 z-50 w-full bg-selva/95 backdrop-blur-md">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
           <a href="#" className="flex items-center gap-3 text-crema">
-            <img src={iconAsset.url} alt="" className="h-8 w-auto" />
-            <span className="font-display text-xl font-bold tracking-tight">
-              Personal Driver
-            </span>
+            <img
+              src={logoAsset.url}
+              alt="Personal Driver"
+              className="h-9 w-auto"
+            />
           </a>
 
           <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-crema/70 md:flex">
@@ -334,10 +335,11 @@ function Index() {
           <div className="mb-16 grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
               <div className="mb-6 flex items-center gap-3">
-                <img src={iconAsset.url} alt="" className="h-8 w-auto" />
-                <span className="font-display text-2xl font-bold tracking-tight">
-                  Personal Driver
-                </span>
+                <img
+                  src={logoAsset.url}
+                  alt="Personal Driver"
+                  className="h-11 w-auto"
+                />
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-crema/60">
                 Tours y transporte privado por el Oriente Antioqueño. Mostramos
