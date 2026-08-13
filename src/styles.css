@@ -116,13 +116,14 @@
   --gold: oklch(0.74 0.13 85);
   --gold-foreground: oklch(0.15 0 0);
 
-  --crema: oklch(0.972 0.028 88);
-  --selva: oklch(0.42 0.11 155);
-  --selva-claro: oklch(0.62 0.14 152);
-  --terracota: oklch(0.61 0.16 42);
-  --fucsia: oklch(0.6 0.21 355);
-  --turquesa: oklch(0.68 0.12 205);
-  --tinta: oklch(0.24 0.04 150);
+  /* Blanco, negro y amarillo */
+  --crema: oklch(0.995 0 0);
+  --selva: oklch(0.17 0 0);
+  --selva-claro: oklch(0.96 0 0);
+  --terracota: oklch(0.62 0.13 84);
+  --fucsia: oklch(0.17 0 0);
+  --turquesa: oklch(0.87 0.15 92);
+  --tinta: oklch(0.18 0 0);
 }
 
 .dark {
