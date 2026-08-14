@@ -1,5 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState, useEffect } from "react";
+import {
+  ToursHero,
+  Destinos,
+  Seguridad,
+  Equipo,
+  Reserva,
+  InstitucionalCompacto,
+} from "@/components/tours-sections";
 
 const sedanImg = "/img/vehicle-sedan.jpg";
 const suvImg = "/img/vehicle-suv.jpg";
@@ -59,27 +67,6 @@ const vehicles = [
   },
 ];
 
-const tours = [
-  {
-    title: "Guatapé y El Peñol",
-    description:
-      "Los 740 escalones de la Piedra, el pueblo de zócalos pintados a mano y un paseo en bote por el embalse.",
-    color: "bg-turquesa",
-  },
-  {
-    title: "Santa Elena y las Silletas",
-    description:
-      "Visita a una finca silletera, historia viva de la Feria de las Flores y almuerzo campesino entre hortensias.",
-    color: "bg-fucsia",
-  },
-  {
-    title: "Pueblos con Sabor",
-    description:
-      "El Retiro, La Ceja, Carmen de Viboral y su cerámica pintada: artesanía, café y arquitectura antioqueña.",
-    color: "bg-terracota",
-  },
-];
-
 const socialLinks = [
   { name: "Instagram", href: "https://www.instagram.com/personaldriver_co/" },
   { name: "LinkedIn", href: "#" },
@@ -134,11 +121,14 @@ function Index() {
             <a href="#tours" className="transition-colors hover:text-gold">
               Tours
             </a>
+            <a href="#destinos" className="transition-colors hover:text-gold">
+              Destinos
+            </a>
             <a href="#fleet" className="transition-colors hover:text-gold">
               Flota
             </a>
-            <a href="#contact" className="transition-colors hover:text-gold">
-              Contacto
+            <a href="#reservar" className="transition-colors hover:text-gold">
+              Reservar
             </a>
           </div>
 
@@ -210,35 +200,10 @@ function Index() {
           </div>
         </header>
 
-        {/* Tours */}
-        <section id="tours" className="py-24">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="mb-14 max-w-2xl">
-              <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-terracota">
-                Nuestros Tours
-              </h2>
-              <p className="font-display text-3xl md:text-4xl">
-                Planes hechos para enamorarte de Antioquia.
-              </p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-3">
-              {tours.map((tour) => (
-                <div
-                  key={tour.title}
-                  className="overflow-hidden rounded-3xl bg-white shadow-[0_12px_40px_-24px_rgba(0,0,0,0.5)] transition-transform hover:-translate-y-1"
-                >
-                  <div className={`h-2 w-full ${tour.color}`} />
-                  <div className="space-y-4 p-8">
-                    <h3 className="font-display text-2xl">{tour.title}</h3>
-                    <p className="text-sm leading-relaxed text-tinta/70">
-                      {tour.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ToursHero />
+        <Destinos />
+        <Seguridad />
+        <Equipo />
 
         {/* Vehicle Carousel */}
         <section id="fleet" className="bg-selva py-24 text-crema">
@@ -305,28 +270,9 @@ function Index() {
           </div>
         </section>
 
-        {/* Contact CTA */}
-        <section id="contact" className="py-28">
-          <div className="mx-auto max-w-4xl px-6 text-center">
-            <span className="mb-6 inline-block rounded-full bg-turquesa/20 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-selva">
-              Planea tu viaje
-            </span>
-            <h2 className="mb-6 font-display text-4xl leading-tight md:text-5xl">
-              Cuéntanos qué quieres conocer y armamos el recorrido.
-            </h2>
-            <p className="mb-10 text-tinta/70">
-              Escríbenos y diseñamos un itinerario a tu medida: tours de un día,
-              traslados desde el aeropuerto José María Córdova o planes para
-              grupos.
-            </p>
-            <a
-              href="mailto:concierge@pdriver.co"
-              className="inline-block rounded-full bg-fucsia px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] text-crema transition-transform hover:scale-105"
-            >
-              Escríbenos
-            </a>
-          </div>
-        </section>
+        <div id="contact">
+          <Reserva />
+        </div>
       </main>
 
       {/* Footer */}
@@ -346,6 +292,9 @@ function Index() {
                 nuestra tierra, sus flores y su gente a viajeros de todo el
                 mundo.
               </p>
+              <div className="mt-6">
+                <InstitucionalCompacto />
+              </div>
             </div>
 
             <div>
@@ -373,7 +322,14 @@ function Index() {
                 Contacto
               </h4>
               <p className="mb-2 text-sm text-crema/60">Atención 24/7</p>
-              <p className="text-sm font-bold">+1 (555) 980-0010</p>
+              <a
+                href="https://wa.me/573247627963"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold transition-colors hover:text-gold"
+              >
+                WhatsApp 324 762 7963
+              </a>
             </div>
           </div>
 

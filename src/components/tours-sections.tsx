@@ -217,7 +217,7 @@ export function Reserva() {
   const [form, setForm] = useState({
     nombre: "",
     personas: "2",
-    destino: destinos[0].name,
+    destino: destinos[0]!.name,
     fecha: "",
     contacto: "",
   });
