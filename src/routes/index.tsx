@@ -322,7 +322,14 @@ function Index() {
                 Contacto
               </h4>
               <p className="mb-2 text-sm text-crema/60">Atención 24/7</p>
-              <p className="text-sm font-bold">+1 (555) 980-0010</p>
+              <a
+                href="https://wa.me/573247627963"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold transition-colors hover:text-gold"
+              >
+                WhatsApp 324 762 7963
+              </a>
             </div>
           </div>
 
