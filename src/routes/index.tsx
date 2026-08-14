@@ -121,11 +121,14 @@ function Index() {
             <a href="#tours" className="transition-colors hover:text-gold">
               Tours
             </a>
+            <a href="#destinos" className="transition-colors hover:text-gold">
+              Destinos
+            </a>
             <a href="#fleet" className="transition-colors hover:text-gold">
               Flota
             </a>
-            <a href="#contact" className="transition-colors hover:text-gold">
-              Contacto
+            <a href="#reservar" className="transition-colors hover:text-gold">
+              Reservar
             </a>
           </div>
 
@@ -289,6 +292,9 @@ function Index() {
                 nuestra tierra, sus flores y su gente a viajeros de todo el
                 mundo.
               </p>
+              <div className="mt-6">
+                <InstitucionalCompacto />
+              </div>
             </div>
 
             <div>
