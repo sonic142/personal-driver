@@ -67,27 +67,6 @@ const vehicles = [
   },
 ];
 
-const tours = [
-  {
-    title: "Guatapé y El Peñol",
-    description:
-      "Los 740 escalones de la Piedra, el pueblo de zócalos pintados a mano y un paseo en bote por el embalse.",
-    color: "bg-turquesa",
-  },
-  {
-    title: "Santa Elena y las Silletas",
-    description:
-      "Visita a una finca silletera, historia viva de la Feria de las Flores y almuerzo campesino entre hortensias.",
-    color: "bg-fucsia",
-  },
-  {
-    title: "Pueblos con Sabor",
-    description:
-      "El Retiro, La Ceja, Carmen de Viboral y su cerámica pintada: artesanía, café y arquitectura antioqueña.",
-    color: "bg-terracota",
-  },
-];
-
 const socialLinks = [
   { name: "Instagram", href: "https://www.instagram.com/personaldriver_co/" },
   { name: "LinkedIn", href: "#" },
@@ -288,28 +267,9 @@ function Index() {
           </div>
         </section>
 
-        {/* Contact CTA */}
-        <section id="contact" className="py-28">
-          <div className="mx-auto max-w-4xl px-6 text-center">
-            <span className="mb-6 inline-block rounded-full bg-turquesa/20 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-selva">
-              Planea tu viaje
-            </span>
-            <h2 className="mb-6 font-display text-4xl leading-tight md:text-5xl">
-              Cuéntanos qué quieres conocer y armamos el recorrido.
-            </h2>
-            <p className="mb-10 text-tinta/70">
-              Escríbenos y diseñamos un itinerario a tu medida: tours de un día,
-              traslados desde el aeropuerto José María Córdova o planes para
-              grupos.
-            </p>
-            <a
-              href="mailto:concierge@pdriver.co"
-              className="inline-block rounded-full bg-fucsia px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] text-crema transition-transform hover:scale-105"
-            >
-              Escríbenos
-            </a>
-          </div>
-        </section>
+        <div id="contact">
+          <Reserva />
+        </div>
       </main>
 
       {/* Footer */}
