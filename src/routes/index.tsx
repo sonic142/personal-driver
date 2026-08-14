@@ -218,35 +218,10 @@ function Index() {
           </div>
         </header>
 
-        {/* Tours */}
-        <section id="tours" className="py-24">
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="mb-14 max-w-2xl">
-              <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-terracota">
-                Nuestros Tours
-              </h2>
-              <p className="font-display text-3xl md:text-4xl">
-                Planes hechos para enamorarte de Antioquia.
-              </p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-3">
-              {tours.map((tour) => (
-                <div
-                  key={tour.title}
-                  className="overflow-hidden rounded-3xl bg-white shadow-[0_12px_40px_-24px_rgba(0,0,0,0.5)] transition-transform hover:-translate-y-1"
-                >
-                  <div className={`h-2 w-full ${tour.color}`} />
-                  <div className="space-y-4 p-8">
-                    <h3 className="font-display text-2xl">{tour.title}</h3>
-                    <p className="text-sm leading-relaxed text-tinta/70">
-                      {tour.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ToursHero />
+        <Destinos />
+        <Seguridad />
+        <Equipo />
 
         {/* Vehicle Carousel */}
         <section id="fleet" className="bg-selva py-24 text-crema">
