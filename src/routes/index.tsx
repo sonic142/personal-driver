@@ -1,5 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState, useEffect } from "react";
+import {
+  ToursHero,
+  Destinos,
+  Seguridad,
+  Equipo,
+  Reserva,
+  InstitucionalCompacto,
+} from "@/components/tours-sections";
 
 const sedanImg = "/img/vehicle-sedan.jpg";
 const suvImg = "/img/vehicle-suv.jpg";
