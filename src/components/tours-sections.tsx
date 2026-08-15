@@ -193,7 +193,7 @@ export function Equipo() {
                 width={400}
                 height={400}
                 loading="lazy"
-                className="mx-auto mb-4 aspect-square h-28 w-28 rounded-full object-cover ring-4 ring-gold md:h-36 md:w-36"
+                className="mx-auto mb-4 aspect-square h-28 w-28 rounded-full object-cover shadow-lg md:h-36 md:w-36"
               />
               <h3 className="font-display text-lg">{p.name}</h3>
               <p className="text-xs uppercase tracking-widest text-tinta/60">
