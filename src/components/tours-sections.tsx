@@ -22,9 +22,9 @@ const seguridad = [
 ];
 
 const equipo = [
-  { name: "Carlos M.", img: "/img/driver-1.jpg" },
-  { name: "Andrés G.", img: "/img/driver-2.jpg" },
-  { name: "Julián R.", img: "/img/driver-3.jpg" },
+  { name: "Carlos M.", img: "/img/driver-1.png" },
+  { name: "Andrés G.", img: "/img/driver-2.png" },
+  { name: "Julián R.", img: "/img/driver-3.png" },
 ];
 
 const WA = "573247627963";
@@ -193,7 +193,7 @@ export function Equipo() {
                 width={400}
                 height={400}
                 loading="lazy"
-                className="mx-auto mb-4 aspect-square h-28 w-28 rounded-full object-cover ring-4 ring-gold md:h-36 md:w-36"
+                className="mx-auto mb-4 aspect-square h-28 w-28 rounded-full object-cover shadow-lg md:h-36 md:w-36"
               />
               <h3 className="font-display text-lg">{p.name}</h3>
               <p className="text-xs uppercase tracking-widest text-tinta/60">
