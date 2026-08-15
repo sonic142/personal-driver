@@ -22,9 +22,9 @@ const seguridad = [
 ];
 
 const equipo = [
-  { name: "Carlos M.", img: "/img/driver-1.jpg" },
-  { name: "Andrés G.", img: "/img/driver-2.jpg" },
-  { name: "Julián R.", img: "/img/driver-3.jpg" },
+  { name: "Carlos M.", img: "/img/driver-1.png" },
+  { name: "Andrés G.", img: "/img/driver-2.png" },
+  { name: "Julián R.", img: "/img/driver-3.png" },
 ];
 
 const WA = "573247627963";
