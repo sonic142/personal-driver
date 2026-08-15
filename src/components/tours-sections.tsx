@@ -25,7 +25,6 @@ const equipo = [
   { name: "Carlos M.", img: "/img/driver-1.jpg" },
   { name: "Andrés G.", img: "/img/driver-2.jpg" },
   { name: "Julián R.", img: "/img/driver-3.jpg" },
-  { name: "Mauricio L.", img: "/img/driver-4.jpg" },
 ];
 
 const WA = "573247627963";
@@ -185,7 +184,7 @@ export function Equipo() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="mx-auto grid max-w-3xl grid-cols-2 gap-8 md:grid-cols-3">
           {equipo.map((p) => (
             <div key={p.name} className="text-center">
               <img
@@ -194,7 +193,7 @@ export function Equipo() {
                 width={400}
                 height={400}
                 loading="lazy"
-                className="mx-auto mb-4 h-28 w-28 rounded-full object-cover ring-4 ring-gold/60 md:h-36 md:w-36"
+                className="mx-auto mb-4 aspect-square h-28 w-28 rounded-full object-cover ring-4 ring-gold md:h-36 md:w-36"
               />
               <h3 className="font-display text-lg">{p.name}</h3>
               <p className="text-xs uppercase tracking-widest text-tinta/60">
