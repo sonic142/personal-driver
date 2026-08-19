@@ -7,6 +7,7 @@ import {
   Equipo,
   Reserva,
   InstitucionalCompacto,
+  FloatingSocialBar,
 } from "@/components/tours-sections";
 
 const sedanImg = "/img/vehicle-sedan.jpg";
