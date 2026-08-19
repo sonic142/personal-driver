@@ -140,60 +140,6 @@ function Index() {
       </nav>
 
       <main>
-        {/* Hero Section */}
-        <header className="relative overflow-hidden pt-20">
-          <div className="relative">
-            <img
-              src={heroImg}
-              alt="Calle de Guatapé con zócalos de colores, flores y la Piedra del Peñol al fondo"
-              width={1600}
-              height={1008}
-              className="h-[70vh] min-h-[440px] w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-tinta/85 via-tinta/50 to-transparent" />
-            <div className="absolute inset-0 flex items-center">
-              <div className="mx-auto w-full max-w-7xl px-6">
-                <div className="max-w-2xl text-crema">
-                  <span className="mb-5 inline-block rounded-full bg-fucsia px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em]">
-                    Oriente Antioqueño · Colombia
-                  </span>
-                  <h1 className="mb-6 font-display text-5xl leading-[0.95] md:text-7xl">
-                    Recorre la tierra de las{" "}
-                    <span className="text-gold">flores</span>
-                  </h1>
-                  <p className="mb-9 max-w-xl text-lg font-light leading-relaxed text-crema/85">
-                    Tours privados y transporte cómodo por Guatapé, El Peñol,
-                    Santa Elena y los pueblos de colores. Conductores locales,
-                    historias reales y mucho color.
-                  </p>
-                  <div className="flex flex-wrap gap-4">
-                    <a
-                      href="#tours"
-                      className="rounded-full bg-gold px-9 py-4 text-xs font-bold uppercase tracking-[0.2em] text-tinta transition-transform hover:scale-105"
-                    >
-                      Ver Tours
-                    </a>
-                    <a
-                      href="#contact"
-                      className="rounded-full border-2 border-crema/70 px-9 py-4 text-xs font-bold uppercase tracking-[0.2em] text-crema transition-colors hover:bg-crema hover:text-tinta"
-                    >
-                      Escríbenos
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* franja de colores tipo zócalo */}
-          <div className="flex h-3 w-full">
-            <div className="flex-1 bg-fucsia" />
-            <div className="flex-1 bg-gold" />
-            <div className="flex-1 bg-turquesa" />
-            <div className="flex-1 bg-terracota" />
-            <div className="flex-1 bg-selva-claro" />
-          </div>
-        </header>
-
         <ToursHero />
         <Destinos />
         <Seguridad />
