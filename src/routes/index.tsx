@@ -68,12 +68,6 @@ const vehicles = [
   },
 ];
 
-const socialLinks = [
-  { name: "Instagram", href: "https://www.instagram.com/personaldriver_co/" },
-  { name: "LinkedIn", href: "#" },
-  { name: "X", href: "#" },
-];
-
 function Index() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
