@@ -270,6 +270,8 @@ function Index() {
         </div>
       </main>
 
+      <FloatingSocialBar />
+
       {/* Footer */}
       <footer className="bg-tinta pb-10 pt-20 text-crema">
         <div className="mx-auto max-w-7xl px-6">
@@ -290,26 +292,6 @@ function Index() {
               <div className="mt-6">
                 <InstitucionalCompacto />
               </div>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em] text-gold">
-                Conectar
-              </h4>
-              <ul className="space-y-4">
-                {socialLinks.map((link) => (
-                  <li key={link.name}>
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block rounded-full border border-crema/20 px-4 py-2 text-sm text-crema/70 transition-colors hover:border-gold hover:text-gold"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </div>
 
             <div>
