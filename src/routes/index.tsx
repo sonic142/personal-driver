@@ -7,6 +7,7 @@ import {
   Equipo,
   Reserva,
   InstitucionalCompacto,
+  FloatingSocialBar,
 } from "@/components/tours-sections";
 
 const sedanImg = "/img/vehicle-sedan.jpg";
@@ -65,12 +66,6 @@ const vehicles = [
     image: sprinterImg,
     accent: "bg-selva-claro",
   },
-];
-
-const socialLinks = [
-  { name: "Instagram", href: "https://www.instagram.com/personaldriver_co/" },
-  { name: "LinkedIn", href: "#" },
-  { name: "X", href: "#" },
 ];
 
 function Index() {
@@ -275,10 +270,12 @@ function Index() {
         </div>
       </main>
 
+      <FloatingSocialBar />
+
       {/* Footer */}
       <footer className="bg-tinta pb-10 pt-20 text-crema">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-4">
+          <div className="mb-16 grid gap-12 md:grid-cols-3">
             <div className="md:col-span-2">
               <div className="mb-6 flex items-center gap-3">
                 <img
@@ -295,26 +292,6 @@ function Index() {
               <div className="mt-6">
                 <InstitucionalCompacto />
               </div>
-            </div>
-
-            <div>
-              <h4 className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em] text-gold">
-                Conectar
-              </h4>
-              <ul className="space-y-4">
-                {socialLinks.map((link) => (
-                  <li key={link.name}>
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block rounded-full border border-crema/20 px-4 py-2 text-sm text-crema/70 transition-colors hover:border-gold hover:text-gold"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </div>
 
             <div>
