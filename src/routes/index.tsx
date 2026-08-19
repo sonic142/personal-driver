@@ -275,7 +275,7 @@ function Index() {
       {/* Footer */}
       <footer className="bg-tinta pb-10 pt-20 text-crema">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-16 grid gap-12 md:grid-cols-4">
+          <div className="mb-16 grid gap-12 md:grid-cols-3">
             <div className="md:col-span-2">
               <div className="mb-6 flex items-center gap-3">
                 <img
