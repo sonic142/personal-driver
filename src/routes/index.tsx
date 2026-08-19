@@ -13,7 +13,6 @@ import {
 const sedanImg = "/img/vehicle-sedan.jpg";
 const suvImg = "/img/vehicle-suv.jpg";
 const sprinterImg = "/img/vehicle-sprinter.jpg";
-const heroImg = "/img/hero-oriente.jpg";
 import logoAsset from "../assets/pdriver-logo-white.png.asset.json";
 
 export const Route = createFileRoute("/")({
