@@ -112,16 +112,16 @@ function Index() {
           </a>
 
           <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-tinta/70 md:flex">
-            <a href="#tours" className="transition-colors hover:text-gold">
+            <a href="#tours" className="transition-colors hover:text-turquesa">
               Tours
             </a>
-            <a href="#destinos" className="transition-colors hover:text-gold">
+            <a href="#destinos" className="transition-colors hover:text-turquesa">
               Destinos
             </a>
-            <a href="#fleet" className="transition-colors hover:text-gold">
+            <a href="#fleet" className="transition-colors hover:text-turquesa">
               Flota
             </a>
-            <a href="#reservar" className="transition-colors hover:text-gold">
+            <a href="#reservar" className="transition-colors hover:text-turquesa">
               Reservar
             </a>
           </div>
