@@ -139,7 +139,7 @@ function Index() {
         </div>
       </nav>
 
-      <main>
+      <main className="pt-20">
         <ToursHero />
         <Destinos />
         <Seguridad />
