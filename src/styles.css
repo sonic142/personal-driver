@@ -116,13 +116,13 @@
   --gold: oklch(0.74 0.13 85);
   --gold-foreground: oklch(0.15 0 0);
 
-  /* Blanco, negro y amarillo */
+  /* Blanco, amarillo, azul y rojo (Colombia) */
   --crema: oklch(0.995 0 0);
   --selva: oklch(0.17 0 0);
-  --selva-claro: oklch(0.96 0 0);
-  --terracota: oklch(0.62 0.13 84);
-  --fucsia: oklch(0.17 0 0);
-  --turquesa: oklch(0.87 0.15 92);
+  --selva-claro: oklch(0.88 0.15 92);
+  --terracota: oklch(0.55 0.22 27);
+  --fucsia: oklch(0.45 0.19 258);
+  --turquesa: oklch(0.55 0.18 255);
   --tinta: oklch(0.18 0 0);
 }
 

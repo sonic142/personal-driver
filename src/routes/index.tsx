@@ -101,27 +101,27 @@ function Index() {
   return (
     <div className="min-h-screen bg-crema font-sans text-tinta selection:bg-fucsia/25">
       {/* Navigation */}
-      <nav className="fixed top-0 z-50 w-full bg-selva/95 backdrop-blur-md">
+      <nav className="fixed top-0 z-50 w-full border-b border-tinta/10 bg-crema/95 backdrop-blur-md">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-          <a href="#" className="flex items-center gap-3 text-crema">
+          <a href="#" className="flex items-center gap-3 text-tinta">
             <img
-              src={logoAsset.url}
+              src="/img/pdriver-logo-dark.png"
               alt="Personal Driver"
               className="h-9 w-auto"
             />
           </a>
 
-          <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-crema/70 md:flex">
-            <a href="#tours" className="transition-colors hover:text-gold">
+          <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-tinta/70 md:flex">
+            <a href="#tours" className="transition-colors hover:text-turquesa">
               Tours
             </a>
-            <a href="#destinos" className="transition-colors hover:text-gold">
+            <a href="#destinos" className="transition-colors hover:text-turquesa">
               Destinos
             </a>
-            <a href="#fleet" className="transition-colors hover:text-gold">
+            <a href="#fleet" className="transition-colors hover:text-turquesa">
               Flota
             </a>
-            <a href="#reservar" className="transition-colors hover:text-gold">
+            <a href="#reservar" className="transition-colors hover:text-turquesa">
               Reservar
             </a>
           </div>
