@@ -391,7 +391,8 @@ export function FloatingSocialBar() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.name}
-          className="grid h-10 w-10 place-items-center rounded-full bg-crema/10 text-crema/80 transition-colors hover:bg-gold hover:text-tinta"
+          className="grid h-10 w-10 place-items-center rounded-full transition-transform hover:scale-110"
+          style={{ background: link.bg, color: link.color }}
         >
           {link.icon}
         </a>
