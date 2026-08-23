@@ -359,6 +359,115 @@ Contacto: ${form.contacto}`;
   );
 }
 
+export function Pqr() {
+  const [form, setForm] = useState({
+    nombre: "",
+    contacto: "",
+    tipo: "Petición",
+    mensaje: "",
+  });
+
+  const mensaje = `Hola Personal Driver,
+Quiero presentar una solicitud de tipo: ${form.tipo}.
+Nombre: ${form.nombre}
+Contacto: ${form.contacto}
+Descripción: ${form.mensaje}`;
+
+  const field =
+    "w-full rounded-2xl border border-tinta/15 bg-white px-4 py-3 text-sm outline-none focus:border-turquesa";
+
+  return (
+    <section id="pqr" className="bg-crema py-20 md:py-24">
+      <div className="mx-auto max-w-2xl px-6">
+        <div className="mb-8 text-center">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-terracota">
+            Atención al cliente
+          </p>
+          <h2 className="mb-3 font-display text-3xl md:text-4xl">
+            Peticiones, quejas y reclamos
+          </h2>
+          <p className="text-tinta/70">
+            Tu opinión nos ayuda a mejorar cada recorrido.
+          </p>
+        </div>
+
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            window.open(waLink(mensaje), "_blank", "noopener,noreferrer");
+          }}
+          className="space-y-4 rounded-3xl border border-tinta/10 bg-selva-claro/35 p-6 shadow-[0_12px_40px_-24px_rgba(0,0,0,0.5)] md:p-8"
+        >
+          <div>
+            <label htmlFor="pqr-nombre" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">
+              Nombre
+            </label>
+            <input
+              id="pqr-nombre"
+              required
+              className={field}
+              value={form.nombre}
+              onChange={(e) => setForm({ ...form, nombre: e.target.value })}
+            />
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label htmlFor="pqr-tipo" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">
+                Tipo de solicitud
+              </label>
+              <select
+                id="pqr-tipo"
+                className={field}
+                value={form.tipo}
+                onChange={(e) => setForm({ ...form, tipo: e.target.value })}
+              >
+                <option>Petición</option>
+                <option>Queja</option>
+                <option>Reclamo</option>
+                <option>Sugerencia</option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="pqr-contacto" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">
+                WhatsApp o correo
+              </label>
+              <input
+                id="pqr-contacto"
+                required
+                className={field}
+                value={form.contacto}
+                onChange={(e) => setForm({ ...form, contacto: e.target.value })}
+              />
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="pqr-mensaje" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">
+              Cuéntanos lo ocurrido
+            </label>
+            <textarea
+              id="pqr-mensaje"
+              required
+              rows={5}
+              className={`${field} resize-y`}
+              value={form.mensaje}
+              onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full rounded-full bg-turquesa px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-crema transition-transform hover:scale-[1.02]"
+          >
+            Enviar solicitud
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+}
+
 export function InstitucionalCompacto() {
   return (
     <div className="mb-10 space-y-1 text-[11px] leading-relaxed text-crema/50">

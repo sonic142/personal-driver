@@ -6,6 +6,7 @@ import {
   Seguridad,
   Equipo,
   Reserva,
+  Pqr,
   InstitucionalCompacto,
   FloatingSocialBar,
 } from "@/components/tours-sections";
@@ -213,6 +214,7 @@ function Index() {
         <div id="contact">
           <Reserva />
         </div>
+        <Pqr />
       </main>
 
       <FloatingSocialBar />

@@ -1,24 +1,83 @@
-# Ride Ready
+# Personal Driver
 
-dame un landing page para una empresa de transporte privado, con un carrousel con imagenes sobre vehiculos en los que se llevarían los pasajeros, una nav bar estética con un boton para iniciar sesion que ya yo le configuro la ruta , y un footer con botones para las redes sociales
+Landing page de Personal Driver, una empresa de transporte privado y tours por
+el Oriente Antioqueño. La página presenta los destinos, las medidas de
+seguridad, el equipo de conductores, la flota de vehículos y un formulario de
+cotización que envía la solicitud por WhatsApp.
 
-This project was built with [Lovable](https://lovable.dev).
+El proyecto utiliza React, TypeScript, Vite y TanStack Start.
 
-## Build with Lovable
+## Funcionalidades
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/d463d029-0a63-4875-86e3-afdc4102376b).
+- Navegación de una sola página con anclas a cada sección.
+- Hero principal con llamada a la acción.
+- Destinos turísticos con cotización individual por WhatsApp.
+- Información de seguridad y documentación de la empresa.
+- Presentación del equipo de conductores.
+- Carrusel responsive de vehículos.
+- Formulario de cotización con envío a WhatsApp y alternativa por correo.
+- Enlaces sociales flotantes en el sitio y en el footer.
+- Metadatos SEO, Open Graph y Twitter Card.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Requisitos
 
-## Development
+- Node.js 18 o superior.
+- npm, incluido con Node.js.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Desarrollo local
 
 ```sh
 git clone <this-repository-url>
-cd <repository-name>
-npm i
+cd personal-driver
+npm install
 npm run dev
 ```
+
+Vite mostrará en la terminal la URL local disponible al iniciar el servidor.
+
+## Scripts
+
+| Comando | Descripción |
+| --- | --- |
+| `npm run dev` | Inicia el servidor de desarrollo con Vite. |
+| `npm run build` | Genera el build de producción. |
+| `npm run build:dev` | Genera un build usando el modo de desarrollo. |
+| `npm run preview` | Sirve localmente el build generado. |
+| `npm run lint` | Ejecuta ESLint sobre el proyecto. |
+| `npm run format` | Formatea los archivos con Prettier. |
+
+## Estructura principal
+
+- `src/routes/__root.tsx`: shell global, SEO y manejo de errores.
+- `src/routes/index.tsx`: ruta `/` y composición de la landing.
+- `src/components/tours-sections.tsx`: secciones visuales, formulario y enlaces sociales.
+- `src/components/ui/`: componentes reutilizables basados en Radix/shadcn.
+- `src/assets/`: assets importados por el bundler.
+- `src/lib/`: utilidades de errores y funciones compartidas.
+- `src/router.tsx`: configuración del router de TanStack.
+- `src/start.ts`: configuración de TanStack Start y middleware CSRF.
+- `src/server.ts`: entrada del servidor y normalización de errores SSR.
+- `src/styles.css`: Tailwind CSS, tokens de color y estilos globales.
+- `public/img/`: imágenes estáticas de destinos, vehículos y conductores.
+
+## Puntos de edición habituales
+
+- Contenido de la landing: `src/components/tours-sections.tsx`.
+- Estructura de la página, navegación y footer: `src/routes/index.tsx`.
+- Títulos y metadatos SEO: `src/routes/__root.tsx` y `src/routes/index.tsx`.
+- Colores, tipografías y utilidades globales: `src/styles.css`.
+- Imágenes: `public/img/`.
+- Número de WhatsApp y redes sociales: `src/components/tours-sections.tsx`.
+- Ruta del botón de inicio de sesión: `src/routes/index.tsx`.
+
+## Archivos generados
+
+`src/routeTree.gen.ts` es generado automáticamente por TanStack Router. No se
+debe editar manualmente; se actualiza cuando se agregan o modifican archivos de
+rutas.
+
+Los componentes de `src/components/ui/` son componentes reutilizables basados
+en Radix y shadcn. Se pueden reutilizar para nuevas funcionalidades sin
+modificar los componentes que la landing no necesita.
+
+
