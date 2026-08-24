@@ -76,17 +76,17 @@ export function Index() {
   return (
     <div className="min-h-screen bg-crema font-sans text-tinta selection:bg-fucsia/25">
       {/* Navigation */}
-      <nav className="fixed top-0 z-50 w-full border-b border-tinta/10 bg-crema/95 backdrop-blur-md">
+      <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-[#0f172a]/95 backdrop-blur-md">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-          <a href="#" className="flex items-center gap-3 text-tinta">
+          <a href="#" className="flex items-center gap-3 text-white">
             <img
-              src="/img/pdriver-logo-dark.png"
+              src="/img/pdriver-logo-light.png"
               alt="Personal Driver"
-              className="h-9 w-auto"
+              className="h-16 w-auto"
             />
           </a>
 
-          <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-tinta/70 md:flex">
+          <div className="hidden items-center gap-10 text-sm font-medium uppercase tracking-widest text-white/70 md:flex">
             <a href="#tours" className="transition-colors hover:text-turquesa">
               Tours
             </a>
@@ -200,9 +200,9 @@ export function Index() {
             <div className="md:col-span-2">
               <div className="mb-6 flex items-center gap-3">
                 <img
-                  src={logoAsset.url}
-                  alt="Personal Driver"
-                  className="h-11 w-auto"
+              src="/img/pdriver-logo-light.png"
+              alt="Personal Driver"
+              className="h-11 w-auto"
                 />
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-crema/60">
