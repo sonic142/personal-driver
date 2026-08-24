@@ -226,7 +226,15 @@ export function Index() {
                 rel="noopener noreferrer"
                 className="text-sm font-bold transition-colors hover:text-gold"
               >
-                WhatsApp 324 762 7963
+                WhatsApp +57 324 7627963
+              </a>
+              <a
+                href="https://wa.me/573234933518"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 block text-sm font-bold transition-colors hover:text-gold"
+              >
+                WhatsApp +57 323 4933518
               </a>
             </div>
           </div>
