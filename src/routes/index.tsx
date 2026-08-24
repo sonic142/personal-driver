@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState, useEffect } from "react";
 import {
   ToursHero,
@@ -15,31 +14,6 @@ const sedanImg = "/img/vehicle-sedan.jpg";
 const suvImg = "/img/vehicle-suv.jpg";
 const sprinterImg = "/img/vehicle-sprinter.jpg";
 import logoAsset from "../assets/pdriver-logo-white.png.asset.json";
-
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    meta: [
-      { title: "Personal Driver | Tours por el Oriente Antioqueño" },
-      {
-        name: "description",
-        content:
-          "Tours y transporte privado por el Oriente Antioqueño: Guatapé, El Peñol, Santa Elena y los pueblos de flores. Vive Colombia con Personal Driver.",
-      },
-      {
-        property: "og:title",
-        content: "Personal Driver | Tours por el Oriente Antioqueño",
-      },
-      {
-        property: "og:description",
-        content:
-          "Tours y transporte privado por Guatapé, El Peñol, Santa Elena y los pueblos con flores del Oriente Antioqueño.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-});
 
 const vehicles = [
   {
@@ -68,7 +42,7 @@ const vehicles = [
   },
 ];
 
-function Index() {
+export function Index() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);

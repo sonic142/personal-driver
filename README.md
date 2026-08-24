@@ -5,7 +5,7 @@ el Oriente Antioqueño. La página presenta los destinos, las medidas de
 seguridad, el equipo de conductores, la flota de vehículos y un formulario de
 cotización que envía la solicitud por WhatsApp.
 
-El proyecto utiliza React, TypeScript, Vite y TanStack Start.
+El proyecto utiliza React, TypeScript y Vite.
 
 ## Funcionalidades
 
@@ -48,15 +48,13 @@ Vite mostrará en la terminal la URL local disponible al iniciar el servidor.
 
 ## Estructura principal
 
-- `src/routes/__root.tsx`: shell global, SEO y manejo de errores.
-- `src/routes/index.tsx`: ruta `/` y composición de la landing.
+- `index.html`: documento HTML principal y metadatos SEO.
+- `src/main.tsx`: punto de entrada de React.
+- `src/routes/index.tsx`: composición de la landing.
 - `src/components/tours-sections.tsx`: secciones visuales, formulario y enlaces sociales.
 - `src/components/ui/`: componentes reutilizables basados en Radix/shadcn.
 - `src/assets/`: assets importados por el bundler.
 - `src/lib/`: utilidades de errores y funciones compartidas.
-- `src/router.tsx`: configuración del router de TanStack.
-- `src/start.ts`: configuración de TanStack Start y middleware CSRF.
-- `src/server.ts`: entrada del servidor y normalización de errores SSR.
 - `src/styles.css`: Tailwind CSS, tokens de color y estilos globales.
 - `public/img/`: imágenes estáticas de destinos, vehículos y conductores.
 
@@ -64,17 +62,11 @@ Vite mostrará en la terminal la URL local disponible al iniciar el servidor.
 
 - Contenido de la landing: `src/components/tours-sections.tsx`.
 - Estructura de la página, navegación y footer: `src/routes/index.tsx`.
-- Títulos y metadatos SEO: `src/routes/__root.tsx` y `src/routes/index.tsx`.
+- Títulos y metadatos SEO: `index.html`.
 - Colores, tipografías y utilidades globales: `src/styles.css`.
 - Imágenes: `public/img/`.
 - Número de WhatsApp y redes sociales: `src/components/tours-sections.tsx`.
 - Ruta del botón de inicio de sesión: `src/routes/index.tsx`.
-
-## Archivos generados
-
-`src/routeTree.gen.ts` es generado automáticamente por TanStack Router. No se
-debe editar manualmente; se actualiza cuando se agregan o modifican archivos de
-rutas.
 
 Los componentes de `src/components/ui/` son componentes reutilizables basados
 en Radix y shadcn. Se pueden reutilizar para nuevas funcionalidades sin
