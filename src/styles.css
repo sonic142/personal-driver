@@ -62,8 +62,8 @@
 
   /* Paleta cultural del Oriente Antioqueño */
   --color-onyx: var(--onyx);
-  --color-coral: var(--coral);
-  --color-coral-foreground: var(--coral-foreground);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
   --color-crema: var(--crema);
   --color-selva: var(--selva);
   --color-selva-claro: var(--selva-claro);
@@ -113,13 +113,13 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
   --onyx: oklch(0.15 0 0);
-  --coral: oklch(0.64 0.14 35);
-  --coral-foreground: oklch(0.15 0 0);
+  --gold: oklch(0.74 0.13 85);
+  --gold-foreground: oklch(0.15 0 0);
 
   /* Blanco, amarillo, azul y rojo (Colombia) */
   --crema: oklch(0.995 0 0);
   --selva: oklch(0.17 0 0);
-  --selva-claro: oklch(0.94 0.06 35);
+  --selva-claro: oklch(0.88 0.15 92);
   --terracota: oklch(0.55 0.22 27);
   --fucsia: oklch(0.45 0.19 258);
   --turquesa: oklch(0.55 0.18 255);
