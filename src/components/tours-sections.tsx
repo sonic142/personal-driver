@@ -109,7 +109,7 @@ export function ToursHero() {
           <div className="max-w-2xl text-crema">
             <h2 className="mb-5 font-display text-4xl leading-[1.05] md:text-6xl">
               Vive Antioquia como se merece — con{" "}
-              <span className="text-gold">anfitriones</span>, no solo
+              <span className="text-coral">anfitriones</span>, no solo
               conductores
             </h2>
             <p className="mb-8 text-base font-light leading-relaxed text-crema/85 md:text-lg">
@@ -120,7 +120,7 @@ export function ToursHero() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#reservar"
-                className="rounded-full bg-gold px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-tinta transition-transform hover:scale-105"
+                className="rounded-full bg-coral px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-tinta transition-transform hover:scale-105"
               >
                 Reserva tu tour
               </a>
@@ -173,7 +173,7 @@ export function Destinos() {
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-gold px-5 py-2 text-[10px] font-bold uppercase tracking-[0.15em] text-tinta"
+                    className="rounded-full bg-coral px-5 py-2 text-[10px] font-bold uppercase tracking-[0.15em] text-tinta"
                   >
                     Cotizar este tour
                   </a>
@@ -196,7 +196,7 @@ export function Seguridad() {
     <section className="bg-[#0f172a] py-20 text-crema md:py-24">
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-10 text-center">
-          <span className="mb-5 inline-block rounded-full bg-gold px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-tinta">
+          <span className="mb-5 inline-block rounded-full bg-coral px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-tinta">
             Viaja con la conciencia tranquila
           </span>
           <h2 className="mb-3 font-display text-3xl md:text-4xl">
@@ -211,7 +211,7 @@ export function Seguridad() {
               key={item}
               className="flex items-start gap-3 rounded-2xl border border-crema/15 p-4"
             >
-              <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-gold text-xs font-bold text-tinta">
+              <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-coral text-xs font-bold text-tinta">
                 ✓
               </span>
               <span className="min-w-0 text-sm text-crema/85">{item}</span>
@@ -220,14 +220,14 @@ export function Seguridad() {
         </ul>
 
         <div className="mx-auto mt-10 grid w-full max-w-3xl gap-5 sm:grid-cols-2">
-          <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
-            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
+          <div className="rounded-3xl border-2 border-coral bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-coral">
               Registro Nacional de Turismo
             </p>
             <p className="font-display text-2xl text-crema">N.º 87094</p>
           </div>
-          <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
-            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
+          <div className="rounded-3xl border-2 border-coral bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-coral">
               Registro Nacional de Turismo
             </p>
             <p className="font-display text-2xl text-crema">N.º 293532</p>
@@ -297,7 +297,7 @@ Fecha aproximada: ${form.fecha}
 Contacto: ${form.contacto}`;
 
   const field =
-    "w-full rounded-2xl border border-tinta/15 bg-white px-4 py-3 text-sm outline-none focus:border-gold";
+    "w-full rounded-2xl border border-tinta/15 bg-white px-4 py-3 text-sm outline-none focus:border-coral";
 
   return (
     <section id="reservar" className="bg-selva-claro py-20 md:py-24">
@@ -352,7 +352,7 @@ Contacto: ${form.contacto}`;
 
           <button
             type="submit"
-            className="w-full rounded-full bg-gold px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-tinta transition-transform hover:scale-[1.02]"
+            className="w-full rounded-full bg-coral px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-tinta transition-transform hover:scale-[1.02]"
           >
             Solicitar cotización
           </button>
@@ -487,11 +487,11 @@ export function InstitucionalCompacto() {
         Transporte
       </p>
       <p>
-        <a href="https://www.instagram.com/personaldriver_co/" target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+        <a href="https://www.instagram.com/personaldriver_co/" target="_blank" rel="noopener noreferrer" className="hover:text-coral">
           Instagram @personaldriver
         </a>{" "}
         ·{" "}
-        <a href={waLink("Hola Personal Driver, quiero información sobre los tours.")} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+        <a href={waLink("Hola Personal Driver, quiero información sobre los tours.")} target="_blank" rel="noopener noreferrer" className="hover:text-coral">
           WhatsApp 324 762 7963
         </a>
       </p>

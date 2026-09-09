@@ -22,7 +22,7 @@ const vehicles = [
     category: "Ideal para parejas",
     specs: "3 Pasajeros · 4 Maletas · Wi-Fi",
     image: sedanImg,
-    accent: "bg-gold",
+    accent: "bg-coral",
   },
   {
     id: "suv",
@@ -106,7 +106,7 @@ export function Index() {
               href="https://www.pdriver.co/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-gold px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-tinta transition-transform duration-300 hover:scale-105 md:px-8"
+              className="rounded-full bg-coral px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-tinta transition-transform duration-300 hover:scale-105 md:px-8"
             >
               Aliados
             </a>
@@ -124,7 +124,7 @@ export function Index() {
         <section id="fleet" className="bg-[#0f172a] py-24 text-crema">
           <div className="mx-auto mb-12 flex max-w-7xl items-end justify-between px-6">
             <div>
-              <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-gold">
+              <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-coral">
                 Nuestra Flota
               </h2>
               <p className="font-display text-3xl">
@@ -137,7 +137,7 @@ export function Index() {
                 onClick={() => scrollBy("left")}
                 disabled={!canScrollLeft}
                 aria-label="Vehículo anterior"
-                className="rounded-full border border-crema/30 p-3 text-crema/70 transition-colors hover:border-gold hover:text-gold disabled:cursor-not-allowed disabled:opacity-40"
+                className="rounded-full border border-crema/30 p-3 text-crema/70 transition-colors hover:border-coral hover:text-coral disabled:cursor-not-allowed disabled:opacity-40"
               >
                 ←
               </button>
@@ -146,7 +146,7 @@ export function Index() {
                 onClick={() => scrollBy("right")}
                 disabled={!canScrollRight}
                 aria-label="Siguiente vehículo"
-                className="rounded-full border border-crema/30 p-3 text-crema/70 transition-colors hover:border-gold hover:text-gold disabled:cursor-not-allowed disabled:opacity-40"
+                className="rounded-full border border-crema/30 p-3 text-crema/70 transition-colors hover:border-coral hover:text-coral disabled:cursor-not-allowed disabled:opacity-40"
               >
                 →
               </button>
@@ -216,7 +216,7 @@ export function Index() {
             </div>
 
             <div>
-              <h4 className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em] text-gold">
+              <h4 className="mb-6 text-[10px] font-bold uppercase tracking-[0.2em] text-coral">
                 Contacto
               </h4>
               <p className="mb-2 text-sm text-crema/60">Atención 24/7</p>
@@ -224,7 +224,7 @@ export function Index() {
                 href="https://wa.me/573247627963"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-bold transition-colors hover:text-gold"
+                className="text-sm font-bold transition-colors hover:text-coral"
               >
                 WhatsApp +57 324 7627963
               </a>
@@ -232,7 +232,7 @@ export function Index() {
                 href="https://wa.me/573234933518"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 block text-sm font-bold transition-colors hover:text-gold"
+                className="mt-2 block text-sm font-bold transition-colors hover:text-coral"
               >
                 WhatsApp +57 323 4933518
               </a>
@@ -241,7 +241,7 @@ export function Index() {
 
           <div className="flex h-2 w-full overflow-hidden rounded-full">
             <div className="flex-1 bg-fucsia" />
-            <div className="flex-1 bg-gold" />
+            <div className="flex-1 bg-coral" />
             <div className="flex-1 bg-turquesa" />
             <div className="flex-1 bg-terracota" />
             <div className="flex-1 bg-selva-claro" />
@@ -254,13 +254,13 @@ export function Index() {
             <div className="flex gap-8">
               <a
                 href="#"
-                className="text-[10px] uppercase tracking-widest text-crema/40 transition-colors hover:text-gold"
+                className="text-[10px] uppercase tracking-widest text-crema/40 transition-colors hover:text-coral"
               >
                 Política de Privacidad
               </a>
               <a
                 href="#"
-                className="text-[10px] uppercase tracking-widest text-crema/40 transition-colors hover:text-gold"
+                className="text-[10px] uppercase tracking-widest text-crema/40 transition-colors hover:text-coral"
               >
                 Términos de Servicio
               </a>
