@@ -231,18 +231,18 @@ export function Seguridad() {
               width={640}
               height={480}
               loading="lazy"
-              className="mb-5 h-40 w-full rounded-2xl bg-white object-contain"
+              className="mb-5 h-40 w-full rounded-2xl bg-transparent object-contain"
             />
             <p className="font-display text-2xl text-crema">N.º 87094</p>
           </div>
           <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
             <img
-              src="/img/certificado_CO.jpg"
+              src="/img/certificado_CO-removebg-preview.png"
               alt="Certificado de transporte"
               width={640}
               height={480}
               loading="lazy"
-              className="mb-5 h-40 w-full rounded-2xl bg-white object-contain"
+              className="mb-5 h-40 w-full rounded-2xl bg-transparent object-contain"
             />
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
@@ -251,12 +251,12 @@ export function Seguridad() {
           </div>
           <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
             <img
-              src="/img/certificado_CO.jpg"
+              src="/img/certificado_CO-removebg-preview.png"
               alt="Certificado de transporte"
               width={640}
               height={480}
               loading="lazy"
-              className="mb-5 h-40 w-full rounded-2xl bg-white object-contain"
+              className="mb-5 h-40 w-full rounded-2xl bg-transparent object-contain"
             />
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
