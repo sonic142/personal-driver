@@ -121,7 +121,7 @@ export function Index() {
         <Equipo />
 
         {/* Vehicle Carousel */}
-        <section id="fleet" className="bg-selva py-24 text-crema">
+        <section id="fleet" className="bg-[#0f172a] py-24 text-crema">
           <div className="mx-auto mb-12 flex max-w-7xl items-end justify-between px-6">
             <div>
               <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-gold">
@@ -194,7 +194,7 @@ export function Index() {
       <FloatingSocialBar />
 
       {/* Footer */}
-      <footer className="bg-tinta pb-10 pt-20 text-crema">
+      <footer className="bg-[#0f172a] pb-10 pt-20 text-crema">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-16 grid gap-12 md:grid-cols-3">
             <div className="md:col-span-2">

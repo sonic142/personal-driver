@@ -193,7 +193,7 @@ export function Destinos() {
 
 export function Seguridad() {
   return (
-    <section className="bg-selva py-20 text-crema md:py-24">
+    <section className="bg-[#0f172a] py-20 text-crema md:py-24">
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-10 text-center">
           <span className="mb-5 inline-block rounded-full bg-gold px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-tinta">
@@ -501,7 +501,7 @@ export function InstitucionalCompacto() {
 
 export function FloatingSocialBar() {
   return (
-    <aside className="fixed bottom-6 right-6 z-40 flex flex-col gap-3 rounded-2xl border border-crema/20 bg-tinta/90 p-3 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] backdrop-blur-md">
+    <aside className="fixed bottom-6 right-6 z-40 flex flex-col gap-3 rounded-2xl border border-crema/20 bg-[#0f172a]/90 p-3 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] backdrop-blur-md">
       {socialLinks.map((link) => (
         <a
           key={link.name}
