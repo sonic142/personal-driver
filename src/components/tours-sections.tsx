@@ -221,18 +221,42 @@ export function Seguridad() {
 
         <div className="mx-auto mt-10 grid w-full max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
+            <img
+              src="/img/certificado_CO.jpg"
+              alt="Certificado de transporte"
+              width={640}
+              height={480}
+              loading="lazy"
+              className="mb-5 h-40 w-full rounded-2xl bg-white object-contain"
+            />
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
             </p>
             <p className="font-display text-2xl text-crema">N.º 87094</p>
           </div>
           <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
+            <img
+              src="/img/certificado_CO.jpg"
+              alt="Certificado de transporte"
+              width={640}
+              height={480}
+              loading="lazy"
+              className="mb-5 h-40 w-full rounded-2xl bg-white object-contain"
+            />
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
             </p>
             <p className="font-display text-2xl text-crema">N.º 293532</p>
           </div>
           <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
+            <img
+              src="/img/certificado_CO.jpg"
+              alt="Certificado de transporte"
+              width={640}
+              height={480}
+              loading="lazy"
+              className="mb-5 h-40 w-full rounded-2xl bg-white object-contain"
+            />
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
             </p>
