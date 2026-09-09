@@ -219,7 +219,7 @@ export function Seguridad() {
           ))}
         </ul>
 
-        <div className="mx-auto mt-10 grid w-full max-w-3xl gap-5 sm:grid-cols-2">
+        <div className="mx-auto mt-10 grid w-full max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
@@ -231,6 +231,12 @@ export function Seguridad() {
               Registro Nacional de Turismo
             </p>
             <p className="font-display text-2xl text-crema">N.º 293532</p>
+          </div>
+          <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
+              Registro Nacional de Turismo
+            </p>
+            <p className="font-display text-2xl text-crema">N.º 214709</p>
           </div>
         </div>
       </div>
