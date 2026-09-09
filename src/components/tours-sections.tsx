@@ -226,7 +226,7 @@ export function Seguridad() {
               Registro Nacional de Turismo
             </p>
             <img
-              src="/img/certificado_CO.jpg"
+              src="/img/certificado_CO-removebg-preview.png"
               alt="Certificado de transporte"
               width={640}
               height={480}
