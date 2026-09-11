@@ -240,10 +240,10 @@ export function Index() {
           </div>
 
           <div className="flex h-2 w-full overflow-hidden rounded-full">
-            <div className="flex-1 bg-fucsia" />
             <div className="flex-1 bg-gold" />
-            <div className="flex-1 bg-turquesa" />
+            <div className="flex-1 bg-fucsia" />
             <div className="flex-1 bg-terracota" />
+            <div className="flex-1 bg-turquesa" />
             <div className="flex-1 bg-selva-claro" />
           </div>
 
