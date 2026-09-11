@@ -37,14 +37,14 @@ Vite mostrará en la terminal la URL local disponible al iniciar el servidor.
 
 ## Scripts
 
-| Comando | Descripción |
-| --- | --- |
-| `npm run dev` | Inicia el servidor de desarrollo con Vite. |
-| `npm run build` | Genera el build de producción. |
+| Comando             | Descripción                                   |
+| ------------------- | --------------------------------------------- |
+| `npm run dev`       | Inicia el servidor de desarrollo con Vite.    |
+| `npm run build`     | Genera el build de producción.                |
 | `npm run build:dev` | Genera un build usando el modo de desarrollo. |
-| `npm run preview` | Sirve localmente el build generado. |
-| `npm run lint` | Ejecuta ESLint sobre el proyecto. |
-| `npm run format` | Formatea los archivos con Prettier. |
+| `npm run preview`   | Sirve localmente el build generado.           |
+| `npm run lint`      | Ejecuta ESLint sobre el proyecto.             |
+| `npm run format`    | Formatea los archivos con Prettier.           |
 
 ## Estructura principal
 
@@ -71,5 +71,3 @@ Vite mostrará en la terminal la URL local disponible al iniciar el servidor.
 Los componentes de `src/components/ui/` son componentes reutilizables basados
 en Radix y shadcn. Se pueden reutilizar para nuevas funcionalidades sin
 modificar los componentes que la landing no necesita.
-
-

@@ -1,11 +1,32 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 export const destinos = [
-  { name: "Guatapé", img: "/img/dest-guatape.jpg", line: "El Peñón y las calzadas de colores más famosas de Colombia" },
-  { name: "Santa Elena", img: "/img/dest-santaelena.jpg", line: "Cuna de los silleteros, entre bosques de flores" },
-  { name: "Carmen de Viboral", img: "/img/dest-carmen.jpg", line: "Tradición cerámica y pueblos con historia" },
-  { name: "Jardín", img: "/img/dest-jardin.jpg", line: "Uno de los pueblos más bonitos de Colombia, café y montaña" },
-  { name: "Santa Fe de Antioquia", img: "/img/dest-santafe.jpg", line: "Historia colonial y clima cálido" },
+  {
+    name: "Guatapé",
+    img: "/img/dest-guatape.jpg",
+    line: "El Peñón y las calzadas de colores más famosas de Colombia",
+  },
+  {
+    name: "Santa Elena",
+    img: "/img/dest-santaelena.jpg",
+    line: "Cuna de los silleteros, entre bosques de flores",
+  },
+  {
+    name: "Carmen de Viboral",
+    img: "/img/dest-carmen.jpg",
+    line: "Tradición cerámica y pueblos con historia",
+  },
+  {
+    name: "Jardín",
+    img: "/img/dest-jardin.jpg",
+    line: "Uno de los pueblos más bonitos de Colombia, café y montaña",
+  },
+  {
+    name: "Santa Fe de Antioquia",
+    img: "/img/dest-santafe.jpg",
+    line: "Historia colonial y clima cálido",
+  },
   { name: "Jericó", img: "/img/dest-jerico.jpg", line: "Arquitectura patrimonial y raíces paisas" },
   { name: "Medellín", img: "/img/dest-medellin.jpg", line: "Tours urbanos y city tours" },
 ];
@@ -93,6 +114,8 @@ const socialLinks = [
 ];
 
 export function ToursHero() {
+  const revealRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="tours" className="relative overflow-hidden">
       <img
@@ -106,16 +129,14 @@ export function ToursHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-tinta/90 via-tinta/60 to-tinta/20" />
       <div className="absolute inset-0 flex items-center">
         <div className="mx-auto w-full max-w-7xl px-6">
-          <div className="max-w-2xl text-crema">
+          <div ref={revealRef} className="scroll-reveal max-w-2xl text-crema">
             <h2 className="mb-5 font-display text-4xl leading-[1.05] md:text-6xl">
-              Vive Antioquia como se merece — con{" "}
-              <span className="text-gold">anfitriones</span>, no solo
-              conductores
+              Vive Antioquia como se merece — con <span className="text-gold">anfitriones</span>, no
+              solo conductores
             </h2>
             <p className="mb-8 text-base font-light leading-relaxed text-crema/85 md:text-lg">
-              Tours privados a Guatapé, Santa Elena, Jardín, Jericó, Santa Fe de
-              Antioquia y más. Seguros, cómodos y con la calidez humana que nos
-              caracteriza.
+              Tours privados a Guatapé, Santa Elena, Jardín, Jericó, Santa Fe de Antioquia y más.
+              Seguros, cómodos y con la calidez humana que nos caracteriza.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -139,9 +160,11 @@ export function ToursHero() {
 }
 
 export function Destinos() {
+  const revealRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section id="destinos" className="py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div ref={revealRef} className="scroll-reveal mx-auto max-w-7xl px-6">
         <div className="mb-10 max-w-2xl">
           <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-terracota">
             Destinos
@@ -168,9 +191,7 @@ export function Destinos() {
                 />
                 <div className="absolute inset-x-0 bottom-0 flex justify-center p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 focus-within:opacity-100">
                   <a
-                    href={waLink(
-                      `Hola Personal Driver, quiero cotizar un tour a ${d.name}.`,
-                    )}
+                    href={waLink(`Hola Personal Driver, quiero cotizar un tour a ${d.name}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full bg-gold px-5 py-2 text-[10px] font-bold uppercase tracking-[0.15em] text-tinta"
@@ -192,9 +213,11 @@ export function Destinos() {
 }
 
 export function Seguridad() {
+  const revealRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section className="bg-[#374151] py-20 text-crema md:py-24">
-      <div className="mx-auto max-w-5xl px-6">
+      <div ref={revealRef} className="scroll-reveal mx-auto max-w-5xl px-6">
         <div className="mb-10 text-center">
           <span className="mb-5 inline-block rounded-full bg-gold px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-tinta">
             Viaja con la conciencia tranquila
@@ -269,16 +292,16 @@ export function Seguridad() {
 }
 
 export function Equipo() {
+  const revealRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <section className="py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div ref={revealRef} className="scroll-reveal mx-auto max-w-7xl px-6">
         <div className="mb-10 max-w-2xl">
           <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-terracota">
             Nuestro equipo
           </h2>
-          <p className="font-display text-3xl md:text-4xl">
-            Conoce a quien te va a llevar
-          </p>
+          <p className="font-display text-3xl md:text-4xl">Conoce a quien te va a llevar</p>
         </div>
 
         <div className="mx-auto grid max-w-3xl grid-cols-2 gap-8 md:grid-cols-3">
@@ -301,8 +324,8 @@ export function Equipo() {
         </div>
 
         <p className="mx-auto mt-12 max-w-2xl text-center font-display text-xl text-tinta/80">
-          Todo nuestro equipo está seleccionado por responsabilidad, honestidad y
-          atención al cliente.
+          Todo nuestro equipo está seleccionado por responsabilidad, honestidad y atención al
+          cliente.
         </p>
       </div>
     </section>
@@ -310,6 +333,7 @@ export function Equipo() {
 }
 
 export function Reserva() {
+  const revealRef = useScrollReveal<HTMLDivElement>();
   const [form, setForm] = useState({
     nombre: "",
     personas: "2",
@@ -331,14 +355,10 @@ Contacto: ${form.contacto}`;
 
   return (
     <section id="reservar" className="bg-selva-claro py-20 md:py-24">
-      <div className="mx-auto max-w-2xl px-6">
+      <div ref={revealRef} className="scroll-reveal mx-auto max-w-2xl px-6">
         <div className="mb-8 text-center">
-          <h2 className="mb-3 font-display text-3xl md:text-4xl">
-            Solicita tu cotización
-          </h2>
-          <p className="text-tinta/70">
-            Responde en minutos por WhatsApp. Sin compromiso.
-          </p>
+          <h2 className="mb-3 font-display text-3xl md:text-4xl">Solicita tu cotización</h2>
+          <p className="text-tinta/70">Responde en minutos por WhatsApp. Sin compromiso.</p>
         </div>
 
         <form
@@ -349,35 +369,90 @@ Contacto: ${form.contacto}`;
           className="space-y-4 rounded-3xl bg-white p-6 shadow-[0_12px_40px_-24px_rgba(0,0,0,0.5)] md:p-8"
         >
           <div>
-            <label htmlFor="nombre" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">Nombre</label>
-            <input id="nombre" required className={field} value={form.nombre}
-              onChange={(e) => setForm({ ...form, nombre: e.target.value })} />
+            <label
+              htmlFor="nombre"
+              className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+            >
+              Nombre
+            </label>
+            <input
+              id="nombre"
+              required
+              className={field}
+              value={form.nombre}
+              onChange={(e) => setForm({ ...form, nombre: e.target.value })}
+            />
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
-              <label htmlFor="personas" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">Número de personas</label>
-              <input id="personas" type="number" min={1} max={40} required className={field} value={form.personas}
-                onChange={(e) => setForm({ ...form, personas: e.target.value })} />
+              <label
+                htmlFor="personas"
+                className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+              >
+                Número de personas
+              </label>
+              <input
+                id="personas"
+                type="number"
+                min={1}
+                max={40}
+                required
+                className={field}
+                value={form.personas}
+                onChange={(e) => setForm({ ...form, personas: e.target.value })}
+              />
             </div>
             <div>
-              <label htmlFor="fecha" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">Fecha aproximada</label>
-              <input id="fecha" type="date" required className={field} value={form.fecha}
-                onChange={(e) => setForm({ ...form, fecha: e.target.value })} />
+              <label
+                htmlFor="fecha"
+                className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+              >
+                Fecha aproximada
+              </label>
+              <input
+                id="fecha"
+                type="date"
+                required
+                className={field}
+                value={form.fecha}
+                onChange={(e) => setForm({ ...form, fecha: e.target.value })}
+              />
             </div>
           </div>
           <div>
-            <label htmlFor="destino" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">Destino de interés</label>
-            <select id="destino" className={field} value={form.destino}
-              onChange={(e) => setForm({ ...form, destino: e.target.value })}>
+            <label
+              htmlFor="destino"
+              className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+            >
+              Destino de interés
+            </label>
+            <select
+              id="destino"
+              className={field}
+              value={form.destino}
+              onChange={(e) => setForm({ ...form, destino: e.target.value })}
+            >
               {destinos.map((d) => (
-                <option key={d.name} value={d.name}>{d.name}</option>
+                <option key={d.name} value={d.name}>
+                  {d.name}
+                </option>
               ))}
             </select>
           </div>
           <div>
-            <label htmlFor="contacto" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">WhatsApp o correo</label>
-            <input id="contacto" required className={field} value={form.contacto}
-              onChange={(e) => setForm({ ...form, contacto: e.target.value })} />
+            <label
+              htmlFor="contacto"
+              className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+            >
+              WhatsApp o correo
+            </label>
+            <input
+              id="contacto"
+              required
+              className={field}
+              value={form.contacto}
+              onChange={(e) => setForm({ ...form, contacto: e.target.value })}
+            />
           </div>
 
           <button
@@ -388,7 +463,10 @@ Contacto: ${form.contacto}`;
           </button>
           <p className="text-center text-xs text-tinta/50">
             ¿Prefieres correo?{" "}
-            <a className="underline hover:text-terracota" href={`mailto:personaldriver.booking@gmail.com?subject=${encodeURIComponent("Cotización de tour")}&body=${encodeURIComponent(mensaje)}`}>
+            <a
+              className="underline hover:text-terracota"
+              href={`mailto:personaldriver.booking@gmail.com?subject=${encodeURIComponent("Cotización de tour")}&body=${encodeURIComponent(mensaje)}`}
+            >
               personaldriver.booking@gmail.com
             </a>
           </p>
@@ -399,12 +477,22 @@ Contacto: ${form.contacto}`;
 }
 
 export function Pqr() {
+  const [open, setOpen] = useState(false);
   const [form, setForm] = useState({
     nombre: "",
     contacto: "",
     tipo: "Petición",
     mensaje: "",
   });
+
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [contentHeight, setContentHeight] = useState(0);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setContentHeight(contentRef.current.scrollHeight);
+    }
+  }, [open]);
 
   const mensaje = `Hola Personal Driver,
 Quiero presentar una solicitud de tipo: ${form.tipo}.
@@ -416,92 +504,131 @@ Descripción: ${form.mensaje}`;
     "w-full rounded-2xl border border-tinta/15 bg-white px-4 py-3 text-sm outline-none focus:border-turquesa";
 
   return (
-    <section id="pqr" className="bg-crema py-20 md:py-24">
+    <section id="pqr" className="bg-crema py-12 md:py-16">
       <div className="mx-auto max-w-2xl px-6">
-        <div className="mb-8 text-center">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-terracota">
-            Atención al cliente
-          </p>
-          <h2 className="mb-3 font-display text-3xl md:text-4xl">
-            Peticiones, quejas y reclamos
-          </h2>
-          <p className="text-tinta/70">
-            Tu opinión nos ayuda a mejorar cada recorrido.
-          </p>
-        </div>
-
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            window.open(waLink(mensaje), "_blank", "noopener,noreferrer");
-          }}
-          className="space-y-4 rounded-3xl border border-tinta/10 bg-selva-claro/35 p-6 shadow-[0_12px_40px_-24px_rgba(0,0,0,0.5)] md:p-8"
+        {/* Toggle bar */}
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          className="group flex w-full items-center justify-between rounded-2xl border border-tinta/10 bg-white px-6 py-5 text-left shadow-sm transition-shadow hover:shadow-md"
         >
           <div>
-            <label htmlFor="pqr-nombre" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">
-              Nombre
-            </label>
-            <input
-              id="pqr-nombre"
-              required
-              className={field}
-              value={form.nombre}
-              onChange={(e) => setForm({ ...form, nombre: e.target.value })}
-            />
+            <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.3em] text-terracota">
+              Atención al cliente
+            </p>
+            <h2 className="font-display text-xl md:text-2xl">Peticiones, quejas y reclamos</h2>
           </div>
-
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div>
-              <label htmlFor="pqr-tipo" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">
-                Tipo de solicitud
-              </label>
-              <select
-                id="pqr-tipo"
-                className={field}
-                value={form.tipo}
-                onChange={(e) => setForm({ ...form, tipo: e.target.value })}
-              >
-                <option>Petición</option>
-                <option>Queja</option>
-                <option>Reclamo</option>
-                <option>Sugerencia</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="pqr-contacto" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">
-                WhatsApp o correo
-              </label>
-              <input
-                id="pqr-contacto"
-                required
-                className={field}
-                value={form.contacto}
-                onChange={(e) => setForm({ ...form, contacto: e.target.value })}
-              />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="pqr-mensaje" className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60">
-              Cuéntanos lo ocurrido
-            </label>
-            <textarea
-              id="pqr-mensaje"
-              required
-              rows={5}
-              className={`${field} resize-y`}
-              value={form.mensaje}
-              onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="w-full rounded-full bg-turquesa px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-crema transition-transform hover:scale-[1.02]"
+          <svg
+            className={`h-5 w-5 shrink-0 text-tinta/40 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
           >
-            Enviar solicitud
-          </button>
-        </form>
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        {/* Collapsible content */}
+        <div
+          style={{ maxHeight: open ? contentHeight : 0 }}
+          className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
+        >
+          <div ref={contentRef} className="pt-6">
+            <p className="mb-6 text-center text-tinta/70">
+              Tu opinión nos ayuda a mejorar cada recorrido.
+            </p>
+
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                window.open(waLink(mensaje), "_blank", "noopener,noreferrer");
+              }}
+              className="space-y-4 rounded-3xl border border-tinta/10 bg-selva-claro/35 p-6 shadow-[0_12px_40px_-24px_rgba(0,0,0,0.5)] md:p-8"
+            >
+              <div>
+                <label
+                  htmlFor="pqr-nombre"
+                  className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+                >
+                  Nombre
+                </label>
+                <input
+                  id="pqr-nombre"
+                  required
+                  className={field}
+                  value={form.nombre}
+                  onChange={(e) => setForm({ ...form, nombre: e.target.value })}
+                />
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="pqr-tipo"
+                    className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+                  >
+                    Tipo de solicitud
+                  </label>
+                  <select
+                    id="pqr-tipo"
+                    className={field}
+                    value={form.tipo}
+                    onChange={(e) => setForm({ ...form, tipo: e.target.value })}
+                  >
+                    <option>Petición</option>
+                    <option>Queja</option>
+                    <option>Reclamo</option>
+                    <option>Sugerencia</option>
+                  </select>
+                </div>
+                <div>
+                  <label
+                    htmlFor="pqr-contacto"
+                    className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+                  >
+                    WhatsApp o correo
+                  </label>
+                  <input
+                    id="pqr-contacto"
+                    required
+                    className={field}
+                    value={form.contacto}
+                    onChange={(e) => setForm({ ...form, contacto: e.target.value })}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="pqr-mensaje"
+                  className="mb-1 block text-xs font-bold uppercase tracking-widest text-tinta/60"
+                >
+                  Cuéntanos lo ocurrido
+                </label>
+                <textarea
+                  id="pqr-mensaje"
+                  required
+                  rows={5}
+                  className={`${field} resize-y`}
+                  value={form.mensaje}
+                  onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full rounded-full bg-turquesa px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-crema transition-transform hover:scale-[1.02]"
+              >
+                Enviar solicitud
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -512,16 +639,23 @@ export function InstitucionalCompacto() {
     <div className="mb-10 space-y-1 text-[11px] leading-relaxed text-crema/50">
       <p>Personal Driver S.A.S. — NIT 901407783-5</p>
       <p>Registro Nacional de Turismo N.º 87094</p>
+      <p>Empresa constituida en Rionegro, Antioquia, con aval del Ministerio de Transporte</p>
       <p>
-        Empresa constituida en Rionegro, Antioquia, con aval del Ministerio de
-        Transporte
-      </p>
-      <p>
-        <a href="https://www.instagram.com/personaldriver_co/" target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+        <a
+          href="https://www.instagram.com/personaldriver_co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gold"
+        >
           Instagram @personaldriver
         </a>{" "}
         ·{" "}
-        <a href={waLink("Hola Personal Driver, quiero información sobre los tours.")} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+        <a
+          href={waLink("Hola Personal Driver, quiero información sobre los tours.")}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gold"
+        >
           WhatsApp 324 762 7963
         </a>
       </p>
