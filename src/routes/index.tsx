@@ -10,35 +10,44 @@ import {
   FloatingSocialBar,
 } from "@/components/tours-sections";
 
-const sedanImg = "/img/vehicle-sedan.jpg";
-const suvImg = "/img/vehicle-suv.jpg";
-const sprinterImg = "/img/vehicle-sprinter.jpg";
+const carro1Img = "/img/carro1_con_logo.jpg";
+const carro2Img = "/img/carro2_con_logo.jpg";
+const busImg = "/img/bus_con_logo.jpg";
+const busetaImg = "/img/busetica_con_logo.jpg";
 import logoAsset from "../assets/pdriver-logo-white.png.asset.json";
 
 const vehicles = [
   {
-    id: "sedan",
-    name: "Sedán Silletero",
+    id: "carro1",
+    name: "Vehículo Personal Driver",
     category: "Ideal para parejas",
     specs: "3 Pasajeros · 4 Maletas · Wi-Fi",
-    image: sedanImg,
+    image: carro1Img,
     accent: "bg-gold",
   },
   {
-    id: "suv",
-    name: "SUV Cañón del Río",
+    id: "carro2",
+    name: "Vehículo Personal Driver",
     category: "Familias y grupos pequeños",
     specs: "6 Pasajeros · 8 Maletas · Refrescos",
-    image: suvImg,
+    image: carro2Img,
+    accent: "bg-gold",
+  },
+  {
+    id: "bus",
+    name: "Bus Personal Driver",
+    category: "Grupos y excursiones",
+    specs: "12 Pasajeros · 15 Maletas · Kit Multimedia",
+    image: busImg,
     accent: "bg-turquesa",
   },
   {
-    id: "sprinter",
-    name: "Van Guatapé",
+    id: "buseta",
+    name: "Buseta Personal Driver",
     category: "Grupos y excursiones",
     specs: "12 Pasajeros · 15 Maletas · Kit Multimedia",
-    image: sprinterImg,
-    accent: "bg-selva-claro",
+    image: busetaImg,
+    accent: "bg-terracota",
   },
 ];
 
@@ -255,7 +264,7 @@ export function Index() {
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <span
-                    className={`absolute left-4 top-4 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-tinta ${vehicle.accent}`}
+                    className={`absolute left-4 top-4 rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-white ${vehicle.accent}`}
                   >
                     {vehicle.category}
                   </span>

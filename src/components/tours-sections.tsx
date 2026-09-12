@@ -44,9 +44,10 @@ const seguridad = [
 ];
 
 const equipo = [
-  { name: "Jorge Sánchez", img: "/img/driver-1.png" },
-  { name: "Eduin Jaramillo", img: "/img/driver-2.png" },
-  { name: "Esteban Flórez", img: "/img/driver-3.png" },
+  { name: "Huberney Sánchez", role: "CEO", img: "/img/huberney-ceo.jpeg" },
+  { name: "Jorge Sánchez", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_1.jpeg" },
+  { name: "Eduin Jaramillo", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_2.jpeg" },
+  { name: "Esteban Flórez", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_3.jpeg" },
 ];
 
 const WA = "573247627963";
@@ -304,12 +305,12 @@ export function Equipo() {
           <p className="font-display text-3xl md:text-4xl">Conoce a quien te va a llevar</p>
         </div>
 
-        <div className="mx-auto grid max-w-3xl grid-cols-2 gap-8 md:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-8 md:grid-cols-4">
           {equipo.map((p) => (
             <div key={p.name} className="text-center">
               <img
                 src={p.img}
-                alt={`Conductor anfitrión ${p.name}`}
+                alt={`${p.role} ${p.name}`}
                 width={400}
                 height={400}
                 loading="lazy"
@@ -317,7 +318,7 @@ export function Equipo() {
               />
               <h3 className="font-display text-lg">{p.name}</h3>
               <p className="text-xs uppercase tracking-widest text-tinta/60">
-                Conductor certificado · Anfitrión turístico
+                {p.role}
               </p>
             </div>
           ))}
