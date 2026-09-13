@@ -118,14 +118,14 @@ export function ToursHero() {
   const revealRef = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="tours" className="relative overflow-hidden">
+    <section id="tours" className="relative min-h-[calc(100svh-5rem)] overflow-hidden">
       <img
         src="/img/dest-guatape.jpg"
         alt="Paisaje del Oriente Antioqueño"
         width={1024}
         height={768}
         loading="lazy"
-        className="h-[60vh] min-h-[420px] w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-tinta/90 via-tinta/60 to-tinta/20" />
       <div className="absolute inset-0 flex items-center">
