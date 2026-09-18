@@ -45,12 +45,14 @@ const seguridad = [
 
 const equipo = [
   { name: "Huberney Sánchez", role: "CEO", img: "/img/huberney-ceo.jpeg" },
-  { name: "Jorge Sánchez", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_1.jpeg" },
-  { name: "Eduin Jaramillo", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_2.jpeg" },
-  { name: "Esteban Flórez", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_3.jpeg" },
+  { name: "Isaias Orozco", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_1.jpeg" },
+  { name: "Edgar Sanchez", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_2.jpeg" },
+  { name: "Juan Guillermo Rueda", role: "Conductor certificado · Anfitrión turístico", img: "/img/conductor_3.jpeg" },
 ];
 
 const WA = "573247627963";
+const CONTACT_EMAIL = "turismopersonaldriver@gmail.com";
+const PQR_ENDPOINT = "https://formspree.io/f/mjykkjna";
 
 function waLink(text: string) {
   return `https://wa.me/${WA}?text=${encodeURIComponent(text)}`;
@@ -248,42 +250,18 @@ export function Seguridad() {
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
             </p>
-            <img
-              src="/img/certificado_CO-removebg-preview.png"
-              alt="Certificado de transporte"
-              width={640}
-              height={480}
-              loading="lazy"
-              className="mb-5 h-40 w-full rounded-2xl bg-transparent object-contain"
-            />
             <p className="font-display text-2xl text-crema">N.º 87094</p>
           </div>
           <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
             </p>
-            <img
-              src="/img/certificado_CO-removebg-preview.png"
-              alt="Certificado de transporte"
-              width={640}
-              height={480}
-              loading="lazy"
-              className="mb-5 h-40 w-full rounded-2xl bg-transparent object-contain"
-            />
             <p className="font-display text-2xl text-crema">N.º 293532</p>
           </div>
           <div className="rounded-3xl border-2 border-gold bg-crema/5 p-6 text-center shadow-[0_12px_30px_-18px_rgba(0,0,0,0.7)]">
             <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
               Registro Nacional de Turismo
             </p>
-            <img
-              src="/img/certificado_CO-removebg-preview.png"
-              alt="Certificado de transporte"
-              width={640}
-              height={480}
-              loading="lazy"
-              className="mb-5 h-40 w-full rounded-2xl bg-transparent object-contain"
-            />
             <p className="font-display text-2xl text-crema">N.º 214709</p>
           </div>
         </div>
@@ -466,9 +444,9 @@ Contacto: ${form.contacto}`;
             ¿Prefieres correo?{" "}
             <a
               className="underline hover:text-terracota"
-              href={`mailto:personaldriver.booking@gmail.com?subject=${encodeURIComponent("Cotización de tour")}&body=${encodeURIComponent(mensaje)}`}
+              href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Cotización de tour")}&body=${encodeURIComponent(mensaje)}`}
             >
-              personaldriver.booking@gmail.com
+              {CONTACT_EMAIL}
             </a>
           </p>
         </form>
@@ -479,6 +457,8 @@ Contacto: ${form.contacto}`;
 
 export function Pqr() {
   const [open, setOpen] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [form, setForm] = useState({
     nombre: "",
     contacto: "",
@@ -545,9 +525,27 @@ Descripción: ${form.mensaje}`;
             </p>
 
             <form
-              onSubmit={(e) => {
+              onSubmit={async (e) => {
                 e.preventDefault();
-                window.open(waLink(mensaje), "_blank", "noopener,noreferrer");
+                setSending(true);
+                setSubmitStatus("idle");
+
+                try {
+                  const response = await fetch(PQR_ENDPOINT, {
+                    method: "POST",
+                    body: new FormData(e.currentTarget),
+                    headers: { Accept: "application/json" },
+                  });
+
+                  if (!response.ok) throw new Error("No se pudo enviar el formulario");
+
+                  setSubmitStatus("success");
+                  setForm({ nombre: "", contacto: "", tipo: "Petición", mensaje: "" });
+                } catch {
+                  setSubmitStatus("error");
+                } finally {
+                  setSending(false);
+                }
               }}
               className="space-y-4 rounded-3xl border border-tinta/10 bg-selva-claro/35 p-6 shadow-[0_12px_40px_-24px_rgba(0,0,0,0.5)] md:p-8"
             >
@@ -560,6 +558,7 @@ Descripción: ${form.mensaje}`;
                 </label>
                 <input
                   id="pqr-nombre"
+                  name="nombre"
                   required
                   className={field}
                   value={form.nombre}
@@ -577,6 +576,7 @@ Descripción: ${form.mensaje}`;
                   </label>
                   <select
                     id="pqr-tipo"
+                    name="tipo"
                     className={field}
                     value={form.tipo}
                     onChange={(e) => setForm({ ...form, tipo: e.target.value })}
@@ -596,6 +596,7 @@ Descripción: ${form.mensaje}`;
                   </label>
                   <input
                     id="pqr-contacto"
+                    name="contacto"
                     required
                     className={field}
                     value={form.contacto}
@@ -613,6 +614,7 @@ Descripción: ${form.mensaje}`;
                 </label>
                 <textarea
                   id="pqr-mensaje"
+                  name="mensaje"
                   required
                   rows={5}
                   className={`${field} resize-y`}
@@ -623,10 +625,21 @@ Descripción: ${form.mensaje}`;
 
               <button
                 type="submit"
+                disabled={sending}
                 className="w-full rounded-full bg-turquesa px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-crema transition-transform hover:scale-[1.02]"
               >
-                Enviar solicitud
+                {sending ? "Enviando..." : "Enviar solicitud"}
               </button>
+              {submitStatus === "success" && (
+                <p role="status" className="text-center text-sm text-green-600">
+                  Tu solicitud fue enviada correctamente.
+                </p>
+              )}
+              {submitStatus === "error" && (
+                <p role="alert" className="text-center text-sm text-red-600">
+                  No pudimos enviar la solicitud. Intenta nuevamente.
+                </p>
+              )}
             </form>
           </div>
         </div>
